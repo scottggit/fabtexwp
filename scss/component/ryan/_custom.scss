@@ -1,0 +1,119 @@
+.text-transf-normal{
+  text-transform: none;
+}
+.f-20{
+  font-size: 20px;
+}
+.text-small {
+  font-size: 14px;
+}
+.text-noir{
+  font-family: $font-family-noir;
+}
+.text-gray{
+  color: #647374;
+}
+.ltr-spc-4{
+  letter-spacing: 4px;
+}
+.bg-img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.bg-top{
+    background-position: top;
+  }
+}
+
+.btn-outline-primary{
+  color: $main-header-color;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  color: $white;
+}
+
+.healthy-choice{
+  .floating-arrow{
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.about-testimonail{
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 50%;
+  background-color: $white;
+  svg{
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+  }
+}
+.section-about-img{
+  .bg-img{
+    display: block;
+    width: 100%;
+    min-height: 20rem;
+  }
+}
+.menu-size{
+  font-family: "avenir-bold";
+  font-size: 14px;
+}
+.menu-card{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.menu-desc{
+  max-width: 350px;
+  margin: auto;
+}
+.menu-label{
+  font-size: 22px;
+  font-family: $font-family-noir;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.menu-meta,
+.menu-price-meta{
+  color: #647374
+}
+.menu-price{
+  font-size: 22px;
+  font-family: "avenir-bold";
+  margin-bottom: 0;
+}
+.menu-price-meta small{
+  font-size: $smaller-font-size;
+}
+
+@media screen and (min-width: 768px){
+  .contactus-btn{
+    position: relative;
+    height: 100%;
+    textarea{
+      height: 100%;
+    }
+    .btn{
+      position: absolute;
+      bottom: 0;
+      right: 0
+    }
+  }
+}
+@media screen and (max-width: 576px){
+  .display-2 {
+    font-size: 4rem;
+  }
+  
+  .display-3 {
+    font-size: 3rem;
+  }
+}

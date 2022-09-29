@@ -1,0 +1,48 @@
+footer {
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .nav-footer {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .nav-footer {
+    li {
+      border-right: 1px solid $primary;
+      &:last-child {
+        border-right: 0;
+      }
+      a {
+        padding: 0 1rem;
+        color: rgb(80, 78, 78);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .fa-brands {
+    border-radius: 50%;
+    padding: 0.5rem 0.6rem;
+    background: #c7c7c9;
+    color: #fff;
+  }
+
+  .social-nav {
+    li {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+footer {
+  li {
+    a {
+      color: #262831;
+    }
+  }
+}

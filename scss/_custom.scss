@@ -1,0 +1,82 @@
+body {
+  background-color: #fdfbf8;
+  position: relative;
+  /* Place header at top, content middle and footer at bottom */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+@each $display, $font-size in $display-font-sizes {
+  .display-#{$display} {
+    font-family: $font-family-heading;
+    color: $headings-color;
+  }
+}
+a.text-dark {
+  &:hover,
+  &:focus {
+    color: #99ca47 !important;
+  }
+}
+.text-small {
+  font-size: $small-font-size;
+}
+
+.text-smaller {
+  font-size: $smaller-font-size;
+}
+
+.text-smallest {
+  font-size: $smallest-font-size;
+}
+.text-normal {
+  font-family: $font-family-base;
+}
+.text-bold {
+  font-weight: $font-family-base-bold-weight;
+  &-h {
+    font-weight: $font-family-base-bold-weight;
+    letter-spacing: 1px;
+  }
+}
+.text-bbs {
+  font-family: $font-family-heading;
+}
+
+.text-long {
+  font-family: $font-family-long;
+  font-size: 6.25rem;
+  line-height: 1;
+  color: #d6e2f5;
+}
+
+a.text-primary {
+  text-decoration: none;
+  color: #202629;
+}
+
+.text-primary {
+  &-light {
+    color: $sub-header-color;
+  }
+}
+
+.mt-10 {
+  margin-top: 10rem;
+}
+
+.mb-10 {
+  margin-bottom: 10rem;
+}
+
+.pt-10 {
+  padding-top: 10rem;
+}
+.ltr-spc {
+  letter-spacing: 1.2px;
+  &-3 {
+    letter-spacing: 3.2px;
+  }
+}
