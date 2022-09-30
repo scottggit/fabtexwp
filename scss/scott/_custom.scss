@@ -154,7 +154,8 @@ textarea {
 h1 {
   .underlined {
     &::before {
-      bottom: 1.5rem;
+      bottom: 0;
+      transform: translate(0px, -10px);
     }
   }
 }
@@ -163,7 +164,8 @@ h1 {
   &::before {
     content: "";
     position: absolute;
-    bottom: 1rem;
+    bottom: 0;
+    transform: translate(0px, -10px);
     left: 0;
     border-bottom: 3px solid #f15d22;
     width: 100%;
@@ -290,11 +292,16 @@ h1 {
         width: 39rem;
       }
       position: absolute;
-      width: 60rem;
-      right: 90%;
+
+      right: 82%;
       top: 75%;
-      img {
-        width: 100%;
+      svg {
+        width: 70rem;
+        height: 33rem;
+        @media screen and (max-width: 1600px) {
+          width: 60rem;
+          height: 33rem;
+        }
       }
     }
   }
@@ -390,6 +397,54 @@ footer .nav-footer li {
 }
 
 .panel {
-  height: 100vh;
+  @media screen and (min-width: 1200px) {
+    height: 100vh;
+  }
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.panel {
+  @media screen and (max-width: 1200px) {
+    height: auto !important;
+  }
+}
+
+.newsletter-wrap {
+  @media screen and (max-width: 1200px) {
+    width: 100% !important;
+  }
+}
+
+.animate__svg {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 1000;
+  animation: dash 3s linear alternate;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate__svg3 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 1000;
+  animation: dash3 3s linear alternate;
+}
+
+@keyframes dash3 {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }

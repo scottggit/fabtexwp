@@ -6,3 +6,18 @@
 	Description: Incorporating HTML5 Boilerplate into Clean Minimal Design
 	Tags: blank, html5, minimal, clean, html5 boilerplate, best practices
 */
+
+.point_style.ihotspot_tooltop_html:after {
+    display: block;
+    content: "+";
+    position: absolute;
+    /* width: 30px; */
+    /* height: 30px; */
+    font-size: 50px;
+    color: red;
+    top: 0;
+    /* background: red; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

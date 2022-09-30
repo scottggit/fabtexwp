@@ -21,12 +21,12 @@
       referrerpolicy="no-referrer"
     />    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/dist/css/styles.css" />
-    
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <span class="bg-grad"></span>
     <nav
-      class="navbar bi-navbar fixed-top navbar-expand-lg navbar-light px-xxl-5 py-lg-4" data-aos="fade-down"
+      class="navbar bi-navbar fixed-top navbar-expand-lg navbar-light px-xxl-5 py-lg-4 mt-3" data-aos="fade-down"
          
          data-aos-offset="0"
          data-aos-duration="2000"
@@ -43,7 +43,7 @@
           aria-label="Toggle navigation"
         ></button>
         <div
-          class="collapse navbar-collapse justify-content-lg-between ms-xl-3 ms-xxl-5"
+          class="collapse navbar-collapse justify-content-lg-end ms-xl-3 ms-xxl-5"
           id="bi-navbar"
         >
           <ul class="nav-menu navbar-nav ms-lg-2 ms-xxl-5 mb-2 mb-lg-0">
@@ -62,9 +62,6 @@
               <a class="nav-link" href="blogs.html">Custom Prints</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact_us.html">For Brands</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="contact_us.html">For Designers</a>
             </li>
             <li class="nav-item">
@@ -74,7 +71,7 @@
             </li>
           </ul>
 
-          <form action="#" class="search-box">
+          <form action="#" class="search-box mr-2">
             <input
               type="search"
               name="search"
@@ -98,7 +95,7 @@
     <div class="fixedbtn-wrap d-flex">
 <div class="fixedbtn">
      
-      <a href=""><i class="fa-solid fa-arrow-up"></i>FABRIC SAMPLE</a>
+      <a href=""><i class="fa-solid fa-arrow-right mb-3"></i>FABRIC SAMPLE</a>
     </div>
     </div>
       <?php wp_head();?>

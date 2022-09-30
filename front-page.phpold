@@ -1,0 +1,194 @@
+<?php get_header(); 
+
+?>
+   <div class="content scroller">
+
+
+<section class="hero-banner pt-5">
+ 
+<div class="row align-items-center justify-content-center">
+  <div class="col-lg-6  order-lg-2 mb-5 mb-lg-0">
+      <div class="video-container">
+        <div class="floating-line1">
+          <img src="<?php bloginfo('template_directory')?>/dist/img/floating-lline-1.png" alt="">
+        </div>
+          <a href="https://www.youtube.com/watch?v=C0DPdy98e4c" class="video-w-poster videoPopup">
+              <img src="<?php bloginfo('template_directory')?>/dist/img/Gallery_Rooms-1_K_Bed_Accessible_02@2x.png" alt="Laughing" class="w-100 img-fluid hero-img">
+          </a>
+        
+      </div>
+  </div>
+
+  <div class="col-lg-5 order-lg-1 banner-desc offset-lg-1">
+      <h1 class=" font-head display-4 mb-4"><span class="underlined">Imagine</span> It,<br/>We'll <span class="underlined">Make</span> It.</span></h1>
+   
+      <p>CUSTOM WINDOW TREATMENTS | BEDDINGS</p>
+      
+   
+    
+  </div>
+</div>
+</section>
+
+
+
+<section class="fabric-chooser-wrap mt-5 pt-5">
+<div class="container">
+<div class="fabric-chooser row align-items-center">
+
+<div class="col-md-4 offset-lg-1">
+<div class="box-content-wrap">
+  <div class="subtitle mb-5">THIS SEASON'S LOOK <span style="color:#f15d22">&mdash;</span></div>
+  <h2>Summer Of Serenity</h2>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="floating-line-3">
+<img src="<?php bloginfo('template_directory')?>/dist/img/floating-line-3.svg"/>
+</div>
+</section>
+
+
+<section class="our_clients slick-w-custom-nav pt-5 mt-5">
+<div class="container">
+<div class="row align-items-center mb-5">
+<div class="col-md-2">
+<div class="my-custom-nav custom_nav_container">
+  <div class="custom_nav animate__animated" data-animate="slideInUp">
+    <span class="fake-prev"><i class="fa-solid fa-arrow-left"></i></span> / <span class="fake-next"><i class="fa-solid fa-arrow-right"></i></span>
+</div>
+    <div class="lg-n-container">
+  
+        <div class="lg-n-detail pt-4">
+            <h2 class="text-primary-light animate__animated" data-animate="slideInUp">You’re In <br/><span class="underlined">Good</span>  <br/>Company</h2>
+        
+           <p class="small">From rising boutique hotels to the biggest brands, Fabtex has transformed thousands of spaces without a hitch.</p>
+        </div>
+    </div>
+
+</div>
+</div>
+<div class="col-md-10">
+<div class="animate__animated" data-animate="slideInUp">
+  <div class="clients_slick slick_trigger">
+
+
+      <div class="c-card p-2 ">
+<div class="client-item">
+<div class="c-card_title-w-img">
+<img src="<?php bloginfo('template_directory')?>/dist/img/h1.jpg" class="w-100">
+
+</div>
+<div class="card-footer">
+<div class="card-logo-wrap">
+<div class="card-logo">
+    <img src="<?php bloginfo('template_directory')?>/dist/img/marriot.png"/>
+  </div>  </div>
+
+</div>
+</div>
+</div>
+
+<div class="c-card p-2">
+<div class="client-item">
+<div class="c-card_title-w-img">
+<img src="<?php bloginfo('template_directory')?>/dist/img/h2.jpg" class="w-100">
+
+</div>
+<div class="card-footer">
+<div class="card-logo-wrap">
+<div class="card-logo">  <img src="<?php bloginfo('template_directory')?>/dist/img/ihg.png"/></div></div>
+
+</div>
+</div></div>
+
+<div class="c-card p-2 m">
+<div class="client-item">
+<div class="c-card_title-w-img">
+<img src="<?php bloginfo('template_directory')?>/dist/img/h3.jpg" class="w-100">
+</div>
+<div class="card-footer"><div class="card-logo-wrap">
+<div class="card-logo">  <img src="<?php bloginfo('template_directory')?>/dist/img/bw.png"/></div></div>
+</div>
+</div>
+
+</div>
+
+<div class="c-card p-2 ">
+<div class="client-item">
+<div class="c-card_title-w-img">
+<img src="<?php bloginfo('template_directory')?>/dist/img/h2.jpg" class="w-100">
+</div>
+<div class="card-footer"><div class="card-logo-wrap">
+<div class="card-logo">  <img src="<?php bloginfo('template_directory')?>/dist/img/marriot.png"/></div></div>
+
+</div>
+</div>
+</div>
+        </div>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contact-form  pt-5">
+<div class="container">
+<div class="contact-wrap row align-items-center">
+
+<div class="col-md-8">
+<h2 class="mb-3">Help At Every Step!</h2>
+<p>
+Need help selecting fabrics? Want to maximize your budget? We'll meet you wherever you are in your project and make it easy for you.
+</p>
+<p>Except thoughtful, personal Fabtex service in creating beautiful spaces.</p>
+<form action=" " class="mt-5">
+<div class="row">
+<div class="col">
+<div class="name-wrap">
+<input type="text" class="form-control" placeholder="name">
+</div>
+<div class="email-wrap">
+<input type="email" class="form-control" placeholder="Email">
+</div>
+<div class="file-drop-wrap">
+<input type="email" class="form-control" placeholder="Add file or drop files here">
+</div>
+</div>
+<div class="col">
+<textarea class="form-control" placeholder="Tell us about project" style="resize: none;height: 100%;"></textarea>
+<input type="submit"/>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="floating-line-4"></div>
+</section>
+<section class="newsletter-wrap mb-5 pb-5">
+<div class="container">
+
+<div class="row newsletter-inner">
+<div class="col-md-5">
+<h3 class="text-light">Sign Up For Inspiration, Discounts & More</h3>
+</div>
+<div class="col-md-7">
+<form action="">
+<input type="email" placeholder="Enter your email"/>
+<button type="submit">Sign up</button>
+</form>
+</div>
+</div>
+
+</div>
+</section>
+
+</div>
+<?php get_footer(); ?>

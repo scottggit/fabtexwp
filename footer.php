@@ -45,52 +45,56 @@
           </div>
           <div class="col-md-6">
             <h3>Find Our Representatives</h3>
-   <img src="<?php bloginfo('template_directory')?>/dist/img/find-representative.svg" alt="" class="w-100">
-          </div>
-        </div>
-
-        <div class="row mt-5 pt-5">
-          <div class="d-lg-flex d-grid justify-content-lg-between align-items-center">
-            <p class="copyright m-0 order-3 order-lg-1">
-              © 2022 Fabtex - All Rights Reserved
-            </p>
-
-         <ul class="nav social-nav order-2 order-lg-2">
-            <li>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-google"></i></a>
-            </li>
-          </ul>
-            <ul class="nav-menu nav-footer order-1 list-unstyled p-0 order-lg-3">
-              <!-- d-flex flex-nowrap  -->
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/">Terms & Conditions</a>
-              </li>
-            
-              <li class="nav-item">
-                <a class="nav-link" href="our_process.html">Accessibility </a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="credit_app.html">Privacy Policy</a>
-              </li>
-
-             
-              <li class="nav-item">
-                <a class="nav-link" href="blogs.html">Legal Statement</a>
-              </li>
-     
-            </ul>
+            <img src="<?php bloginfo('template_directory')?>/dist/img/find-representative.svg" alt="" class="w-100">
           </div>
         </div>
       </div>
+
+        <div class=" mt-5 bg-[#FEFEFE] border-[#26283147] border-t-[1px]">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="d-lg-flex d-grid justify-content-lg-between align-items-center">
+                        <p class="copyright m-0 order-3 order-lg-1 text-[12px] font-weight-light">
+                        © 2022 Fabtex - All Rights Reserved
+                        </p>
+
+                        <ul class="nav social-nav order-2 order-lg-2">
+                            <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                            <a href="#"><i class="fa-brands fa-google"></i></a>
+                            </li>
+                        </ul>
+                        <ul class="nav-menu nav-footer order-1 list-unstyled p-0 order-lg-3">
+                            <!-- d-flex flex-nowrap  -->
+                            <li class="nav-item">
+                                <a class="nav-link text-[12px] font-weight-light" aria-current="page" href="/">Terms & Conditions</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link text-[12px] font-weight-light" href="our_process.html">Accessibility </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link text-[12px] font-weight-light" href="credit_app.html">Privacy Policy</a>
+                            </li>
+
+                            
+                            <li class="nav-item">
+                                <a class="nav-link text-[12px] font-weight-light" href="blogs.html">Legal Statement</a>
+                            </li>
+                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        <div>
     </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
