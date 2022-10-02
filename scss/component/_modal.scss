@@ -1,0 +1,16 @@
+.modal{
+    &-dialog{
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 100%;
+    }
+    &-content{
+        border-radius: 1rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .btn-close, .btn-close svg{
+        width: 2rem;
+        height: 2rem;
+    }
+}
