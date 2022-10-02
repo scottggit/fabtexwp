@@ -1,16 +1,42 @@
-.modal{
-    &-dialog{
+.modal {
+    &-dialog {
         margin-top: 0;
         margin-bottom: 0;
         height: 100%;
     }
-    &-content{
+
+    &-content {
         border-radius: 1rem;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
-    .btn-close, .btn-close svg{
+
+    .btn-close {
+        position: absolute;
+        top: -4rem;
+        right: 0;
+        opacity: 1;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        &:hover{
+            transform: rotate(90deg);
+        }
+    }
+
+    .btn-close,
+    .btn-close svg {
         width: 2rem;
         height: 2rem;
+    }
+
+    .btn-close line {
+        stroke: white;
+    }
+}
+
+.modal-open{
+    .fixedbtn-wrap{
+        z-index: 10;
     }
 }

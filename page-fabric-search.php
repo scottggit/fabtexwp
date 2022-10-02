@@ -25,11 +25,16 @@
 <div class="search-container position-relative mt-n-3r pb-5 mb-lg-5">
     <div class="container">
         <div class="row">
-            <div class="col-xl-3 col-lg-4">
-                <span class="filter-toggle">
-                    Filter
-                </span>
+            <div class="col-xl-3 col-md-4">
                 <div class="filter-container">
+                    <span class="filter-toggle-close">
+                        <svg width="32px" height="32px" viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg">
+                            <g id="line">
+                                <line x1="17.5" x2="54.5" y1="17.5" y2="54.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+                                <line x1="54.5" x2="17.5" y1="17.5" y2="54.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+                            </g>
+                        </svg>
+                    </span>
                     <div class="d-flex justify-content-between mb-4">
                         <h3 class="text-[24px]">Filter By</h3>
                         <span class="text-[14px]">CLEAR ALL</span>
@@ -164,7 +169,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-9 col-lg-8">
+            <div class="col-xl-9 col-md-8">
                 <div class="filter-side d-flex flex-wrap justify-content-between mb-4">
                     <div class="filter-left">
                         <span class="color-search" data-bs-toggle="modal" data-bs-target="#colorSelector">
@@ -184,253 +189,79 @@
                         </div>
                     </div>
                     <div class="filter-right">
-                        <img src="<?php bloginfo('template_directory') ?>/dist/img/grid-3.png" alt="Grid 3" class="grid-toggle grid-view-3">
-                        <img src="<?php bloginfo('template_directory') ?>/dist/img/grid-4.png" alt="Grid 4" class="grid-toggle grid-view-4 active">
+
+                        <span class="filter-toggle text-dark"></span>
+                        <div class="filter-grid">
+                            <img src="<?php bloginfo('template_directory') ?>/dist/img/grid-3.png" alt="Grid 3" class="grid-toggle grid-view-3">
+                            <img src="<?php bloginfo('template_directory') ?>/dist/img/grid-4.png" alt="Grid 4" class="grid-toggle grid-view-4 active">
+                        </div>
                     </div>
                 </div>
 
                 <div class="fabric-list">
                     <div class="row">
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f01@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f02@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f03@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f04@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f05@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f06@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f01@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f02@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f03@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f04@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f05@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f06@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f01@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f02@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f03@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f04@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f05@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f06@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f01@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f02@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f03@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f04@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f05@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
-                        <div class="fabric-col col-lg-3 col-md-4 col-6 mb-4">
-                            <a href="" class="fabric-item">
-                                <span class="fabric-pin"></span>
-                                <div class="fabric-img-container bg-img">
-                                    <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f06@2x.jpg" alt="Fabric" class="fabric-img">
-                                </div>
-                                <p>Abstract Blue</p>
-                                <span>2435932</span>
-                            </a>
-                        </div>
+                        <?php for ($i = 1; $i < 5; $i++) : ?>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f01@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f02@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f03@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f04@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f05@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f06@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
+                        <?php endfor; ?>
                     </div>
                 </div>
             </div>
@@ -450,15 +281,49 @@
         $(this).toggleClass('active');
         $(this).closest('.filter-item').find('ul').slideToggle('fast');
     });
+
+    $('.filter-toggle').on('click', function() {
+        $('.filter-container').addClass('active');
+    });
+    $('.filter-toggle-close').on('click', function() {
+        $('.filter-container').removeClass('active');
+    });
+
     $('.grid-toggle').on('click', function() {
         $('.grid-toggle').removeClass('active');
         $(this).toggleClass('active');
         console.log($(this));
         if ($(this).hasClass('grid-view-3')) {
-            $('.fabric-list .fabric-col').removeClass('col-lg-3').addClass('col-lg-4');
+            $('.fabric-list .fabric-col').removeClass('col-xl-3').addClass('col-xl-4');
         } else if ($(this).hasClass('grid-view-4')) {
-            $('.fabric-list .fabric-col').removeClass('col-lg-4').addClass('col-lg-3');
+            $('.fabric-list .fabric-col').removeClass('col-xl-4').addClass('col-xl-3');
         }
+    });
+
+
+    gsap.defaults({
+        ease: "power3"
+    });
+
+
+    gsap.set(".fabric-col", {
+        opacity: 0
+    });
+
+    ScrollTrigger.batch(".fabric-col", {
+
+        once: true,
+
+        interval: 0.1,
+        batchMax: 3,
+
+        onEnter: (batch) => {
+            gsap.to(batch, {
+                autoAlpha: 1,
+                stagger: 0.15,
+                overwrite: true
+            })
+        },
     });
 </script>
 
@@ -470,15 +335,15 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                     <svg width="72px" height="72px" viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg">
                         <g id="line">
-                            <line x1="17.5" x2="54.5" y1="17.5" y2="54.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
-                            <line x1="54.5" x2="17.5" y1="17.5" y2="54.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+                            <line x1="17.5" x2="54.5" y1="17.5" y2="54.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" />
+                            <line x1="54.5" x2="17.5" y1="17.5" y2="54.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="4" />
                         </g>
                     </svg>
                 </button>
 
-                <h3 class="modal-header h1 pt-0">Search Fabrics By Color</h3>
+                <h3 class="h1 pt-0">Search Fabrics By Color</h3>
                 <p>Use the color picker to select colors or upload an image.</p>
-                <div class="container">
+                <div class="container mt-4">
                     <div class="wheel" id="colorWheelDemo"></div>
                 </div>
             </div>
