@@ -237,3 +237,15 @@ $(".floating-line-3").each(function () {
     },
   });
 });
+
+$(".has-mega-menu .item").on("click", function (event) {
+  $(this).closest(".has-mega-menu").toggleClass("mega-menu-open");
+  $(this).closest(".has-mega-menu").siblings().removeClass("mega-menu-open");
+
+  $(this).closest(".has-mega-menu").find(".mega-menu").slideToggle(300);
+  $(this).closest(".has-mega-menu").siblings().find(".mega-menu").slideUp(300);
+});
+
+$(".btn-burger, .mobile-menu-close").on("click", function (event) {
+  $("body").toggleClass("menu-open");
+});

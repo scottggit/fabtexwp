@@ -24,7 +24,156 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+
+    
     <span class="bg-grad"></span>
+
+
+    
+  <div class="mobile-menu ">
+         <div class="d-flex flex-column h-100">
+            <div class="mobile-menu__header">
+               <div class="container">
+                  <div class="top-section-holder">
+                     <div class="row align-items-center justify-content-between">
+                        <div class="col-auto">
+                           <a class="site-logo" href="<?php echo get_site_url(); ?>"><img class="w-100" src="<?php bloginfo('template_directory')?>/images/site-logo.svg" alt=""></a>
+                        </div>
+                        <div class="col-auto">
+                           <div class="mobile-menu-close"><img class="w-100" src="<?php bloginfo('template_directory')?>/dist/img/menu-close.svg" alt=""></div>
+                        </div>
+                     </div>
+                  </div>
+               
+               </div>
+            </div>
+            <div class="flex-grow-1 d-flex flex-column mobile-menu__body-wrap">
+               <div class="mobile-menu__body">
+               
+                  <div class="container">
+                     <div class="main-nav">
+                        <ul class="nav" >
+                   
+                           <li class="menu-item">
+                              <a class="item" href="<?php echo get_site_url(); ?>">Home</a>
+                           </li>
+                      
+                           <li class="menu-item has-mega-menu">
+                              <a class="item" href="<?php echo get_site_url() ?>/#">Hospitality</a>
+                              <div class="mega-menu">
+                                 <h6 class="welcome-mega-menu">
+                                 Window Treatments
+                                 </h6>
+                                 <div class="blocks row">
+                                    <div class="col-12 block">
+                                      
+                                          <h6 class="title">Window Treatments</h6>
+                                       
+                                          <ul>
+                                                  <li>
+                                                    <a href="">Draperies</a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="">Roller Shades</a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="">Blinds</a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="">Top Treatments</a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="">Hardware</a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="">Speciality Shades</a>
+                                                  </li>
+                                                </ul>
+                                    </div>
+                                    <div class="col-12 block">
+                                    
+                                          <h6 class="title">Beddings</h6>
+                                          <ul>
+                                                  <li>
+                                                    <a href="">Bed Covers</a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="">Roller Shades</a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="">Bed Skirt</a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="">Box Spring Covers</a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="">Scarves</a>
+                                                  </li>
+                                                  <li>
+                                                    <a href="">Pillows</a>
+                                                  </li>
+                                                </ul>
+                                    </div>
+                                    <div class="col-12 block">
+                                    
+                                       
+                                          <h6 class="title">Our Process</h6>
+                                          <p>Working with us for the first time?</p>
+                                          <p>Here's what to except.</p>
+                                    
+                                    </div>
+                                 </div>
+                        
+                              </div>
+                           </li>
+                     
+                           <li class="menu-item">
+                              <a class="item" href="<?php echo get_site_url() ?>/#">Healthcare</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="item" href="<?php echo get_site_url() ?>/#">Custom Prints</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="item" href="<?php echo get_site_url() ?>/#">For Brands</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="item" href="<?php echo get_site_url() ?>/#">For Designers</a>
+                           </li>
+                           <li class="menu-item">
+                              <a class="item" href="<?php echo get_site_url() ?>/#">The Feterik Leadership</a>
+                           </li>
+                    
+                        </ul>
+                     </div>
+       
+                  </div>
+               </div>
+               <div class="mobile-menu__footer">
+                  <div class="border-illustration-top" style="background-image: url(<?php bloginfo('template_directory')?>/images/border-llustration.svg);"></div>
+                  <div class="floating-rainbow">
+                     <img class="w-100" src="<?php bloginfo('template_directory')?>/images/rainbow.svg" alt="">
+                  </div>
+                  <div class="container">
+                     <div class="copyrightandsiteby">
+                        <div class="form-row align-items-center">
+                           <div class="col-auto">
+                              <img class="ico" src="<?php bloginfo('template_directory')?>/images/heart.svg" alt="">
+                           </div>
+                           <div class="col">
+                              <span class="copyright">&copy; 2022 Lite Child. All rights reserved.</span>
+                              <span class="siteby">Site by <a href="https://wearelion.nyc/" target="_blank">We Are Lion</a></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
     <nav
       class="navbar bi-navbar fixed-top navbar-expand-lg navbar-light px-xxl-5 py-lg-4 mt-3" data-aos="fade-down"
          
@@ -33,15 +182,17 @@
     >
       <div class="container-fluid px-lg-3">
         <a class="navbar-brand logo" href="/"><img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt=""></a>
-        <button
+
+        <div class="col-auto d-xl-none">          
+                     <a class="btn-burger" href="javascript:void(0)">
+                     <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#bi-navbar"
-          aria-controls="bi-navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        
         ></button>
+                     </a>
+                  </div>
+
         <div
           class="collapse navbar-collapse justify-content-lg-end ms-xl-3 ms-xxl-5 main-nav"
           id="bi-navbar"
@@ -191,21 +342,21 @@
                                      </div>
                                      <div class="col-md col-right">
               
-<div class="blocks row mb-5">
+<div class="blocks row ">
 <div class="col-md-12 block">
   <h3>Brand Log-In <i class="fa-solid fa-arrow-right"></i></h3>
   <p>To access the project tracker, and installation & support resources.</p>
 </div>
 </div>
 
-<div class="blocks row mb-5">
+<div class="blocks row ">
 <div class="col-md-12 block">
   <h3>Our Process <i class="fa-solid fa-arrow-right"></i></h3>
   <p>Working with us for the first time? Here’s what to expect.</p>
 </div>
 </div>
 
-<div class="blocks row mb-5">
+<div class="blocks row ">
 <div class="col-md-12 block">
   <h3>Find Fabrics <i class="fa-solid fa-arrow-right"></i></h3>
  
@@ -246,14 +397,14 @@
                                      </div>
                                      <div class="col-md col-right">
               
-                                <div class="blocks row mb-5">
+                                <div class="blocks row ">
                                 <div class="col-md-12 block">
                                   <h3>Search Fabrics By Color <i class="fa-solid fa-arrow-right"></i></h3>
                                   <p>Upload an image or use the color picker to select similar-colored fabrics</p>
                                 </div>
                                 </div>
 
-                                <div class="blocks row mb-5">
+                                <div class="blocks row ">
                                 <div class="col-md-12 block">
                                   <h3>Request Samples <i class="fa-solid fa-arrow-right"></i></h3>
                                   <p>If you don’t see a fabric you like here, tell us what you need and well find it for you</p>
