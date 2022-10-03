@@ -11,7 +11,7 @@
 <div class="h-[450px] relative bg-[url('<?php bloginfo('template_directory') ?>/dist/img/header-pattern.png')]">
     <div class="container d-flex h-100">
         <div class="m-auto">
-            <h1 class="text-[45px]"> Search <span class="underlined">Fabrics</span> By Color </h1>
+            <h1 class="text-[45px]"> Search <u class="underline-primary">Fabrics</u> By Color </h1>
             <div class="d-flex text-center mt-3">
                 <a href="" class="font-weight-regular text-[14px] ml-auto text-[#252831]"> <u>Hospitality</u> </a>
                 <span class="px-3 text-[#252831]"> > </span>
@@ -26,148 +26,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-md-4">
-                <div class="filter-container">
-                    <span class="filter-toggle-close">
-                        <svg width="32px" height="32px" viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg">
-                            <g id="line">
-                                <line x1="17.5" x2="54.5" y1="17.5" y2="54.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
-                                <line x1="54.5" x2="17.5" y1="17.5" y2="54.5" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
-                            </g>
-                        </svg>
-                    </span>
-                    <div class="d-flex justify-content-between mb-4">
-                        <h3 class="text-[24px]">Filter By</h3>
-                        <span class="text-[14px]">CLEAR ALL</span>
-                    </div>
-                    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
-                        <p class="filter-title text-dark"><strong>Application</strong></p>
-                        <ul class="mt-3">
-                            <li class="mb-2">
-                                <input type="checkbox" name="application" id="blinds">
-                                <label for="blinds">Blinds (22)</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="application" id="draperies">
-                                <label for="draperies">Draperies (4)</label>
-                            </li>
-                            <li class="">
-                                <input type="checkbox" name="application" id="roller_shades">
-                                <label for="roller_shades">Roller Shades (15)</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
-                        <p class="filter-title text-dark"><strong>Material</strong></p>
-                        <ul class="mt-3">
-                            <li class="mb-2">
-                                <input type="checkbox" name="material" id="linen">
-                                <label for="linen">Linen & Natural Weaves</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="material" id="Papel">
-                                <label for="Papel">Papel</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="material" id="Polyester">
-                                <label for="Polyester">Polyester</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="material" id="Sheers">
-                                <label for="Sheers">Sheers</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="material" id="Silk">
-                                <label for="Silk">Silk</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="material" id="Synthetic">
-                                <label for="Synthetic">Synthetic</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="material" id="Velvet">
-                                <label for="Velvet">Velvet</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="material" id="Vinyl">
-                                <label for="Vinyl">Vinyl</label>
-                            </li>
-                            <li class="">
-                                <input type="checkbox" name="material" id="Wool">
-                                <label for="Wool">Wool & Wool Mixes</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
-                        <p class="filter-title text-dark"><strong>Maximum Width</strong></p>
-                        <ul class="mt-3">
-                            <li class="mb-2">
-                                <input type="checkbox" name="max_width" id="max_width_54">
-                                <label for="max_width_54">54”</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="max_width" id="max_width_72">
-                                <label for="max_width_72">72”</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="max_width" id="max_width_94">
-                                <label for="max_width_94">94”</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="max_width" id="max_width_110">
-                                <label for="max_width_110">110”</label>
-                            </li>
-                            <li class="">
-                                <input type="checkbox" name="max_width" id="max_width_118">
-                                <label for="max_width_118">118”</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
-                        <p class="filter-title text-dark"><strong>Patterns & Textures</strong></p>
-                        <ul class="mt-3">
-                            <li class="mb-2">
-                                <input type="checkbox" name="patterns" id="Solids">
-                                <label for="Solids">Solids</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="patterns" id="Patterned">
-                                <label for="Patterned">Patterned</label>
-                            </li>
-                            <li class="">
-                                <input type="checkbox" name="patterns" id="Texture">
-                                <label for="Texture">Texture</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
-                        <p class="filter-title text-dark"><strong>Fabric Type</strong></p>
-                        <ul class="mt-3">
-                            <li class="mb-2">
-                                <input type="checkbox" name="fabric_type" id="Blackout">
-                                <label for="Blackout">Blackout</label>
-                            </li>
-                            <li class="mb-2">
-                                <input type="checkbox" name="fabric_type" id="UV_Printed">
-                                <label for="UV_Printed">UV Printed</label>
-                            </li>
-                            <li class="">
-                                <input type="checkbox" name="fabric_type" id="Woven">
-                                <label for="Woven">Woven</label>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm filter-openness_range">
-                        <p class="filter-title text-dark"><strong>Openness</strong></p>
-                        <ul class="mt-3">
-                            <p class="openness_range_label d-flex justify-content-between">
-                                <span>0%</span>
-                                <span>5%</span>
-                                <span>10%</span>
-                            </p>
-                            <input type="range" min="0" max="10" value="2" id="fader" step="1">
-                        </ul>
-                    </div>
-                </div>
+                <?php include ('inc/side-filter.php');?>
             </div>
             <div class="col-xl-9 col-md-8">
                 <div class="filter-side d-flex flex-wrap justify-content-between mb-4">
@@ -264,6 +123,7 @@
                         <?php endfor; ?>
                     </div>
                 </div>
+                <?php include ('inc/pagination.php');?>
             </div>
         </div>
     </div>
