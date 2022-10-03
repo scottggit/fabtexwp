@@ -213,6 +213,38 @@
   </div>
 </div>
 
+
 <?php get_footer(); ?>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.defaults({
+  toggleActions: "restart pause resume pause",
+});
+
+const sections = gsap.utils.toArray("section");
+
+let snap = ScrollTrigger.create({
+  trigger: ".first",
+  start: "top top+=60",
+  endTrigger: ".last",
+  end: "bottom bottom+=100",
+  scrub: 1,
+  onUpdate: (e) => {
+    if(e.progress > 0.3 && e.progress < 0.4)
+    {
+      $('body').css({'overflow': 'hidden'});
+      window.addEventListener("wheel", scrollDetect);
+    }
+  },
+  snap: {
+    snapTo: 1 / (sections.length - 1),
+    delay: 0.1,
+    duration: { min: 0.2, max: 0.2 }, // the snap animation should be at least 0.25 seconds, but no more than 0.75 seconds (determined by velocity)
+    ease: "power1.inOut", // the ease of the snap animation ("power3" by default)
+  },
+});
+</script>
+
 
 </div>
