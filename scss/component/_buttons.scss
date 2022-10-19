@@ -1,4 +1,5 @@
 .btn {
+  --bs-btn-border-radius: 2rem;
   text-transform: uppercase;
 }
 .btn-secondary,
@@ -9,9 +10,23 @@
   color: $white;
 }
 
-.btn-white {
+.btn.btn-white {
   @include button-white-variant();
+  &:hover,
+  &:focus{
+    border-color: var(--body-color);
+    background-color: var(--body-color);
+    color: $white;
+  }
 }
-.btn-outline-white {
+.btn.btn.btn-outline-white {
   @include button-outline-white-variant();
+  border-color: var(--body-color);
+  color: var(--body-color);
+  &:hover,
+  &:focus{
+    border-color: var(--body-color);
+    background-color: var(--body-color);
+    color: $white;
+  }
 }

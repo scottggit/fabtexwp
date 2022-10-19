@@ -26,7 +26,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-md-4">
-                <?php include ('inc/side-filter.php');?>
+                <?php include('inc/side-filter.php'); ?>
             </div>
             <div class="col-xl-9 col-md-8">
                 <div class="filter-side d-flex flex-wrap justify-content-between mb-4">
@@ -59,7 +59,67 @@
 
                 <div class="fabric-list">
                     <div class="row">
-                        <?php for ($i = 1; $i < 5; $i++) : ?>
+                        <?php for ($i = 1; $i < 2; $i++) : ?>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f07@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f08@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f09@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f10@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f11@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
+                            <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
+                                <a href="" class="fabric-item">
+                                    <span class="fabric-pin"></span>
+                                    <div class="fabric-img-container bg-img">
+                                        <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f12@2x.jpg" alt="Fabric" class="fabric-img">
+                                    </div>
+                                    <p>Abstract Blue</p>
+                                    <span>2435932</span>
+                                </a>
+                            </div>
                             <div class="fabric-col col-xl-3 col-lg-4 col-6 mb-4">
                                 <a href="" class="fabric-item">
                                     <span class="fabric-pin"></span>
@@ -123,14 +183,13 @@
                         <?php endfor; ?>
                     </div>
                 </div>
-                <?php include ('inc/pagination.php');?>
+                <?php include('inc/pagination.php'); ?>
             </div>
         </div>
     </div>
 </div>
 
-<?php get_footer()
-?>
+<?php get_footer()?>
 <script>
     var colorWheel = new iro.ColorPicker("#colorWheelDemo", {
         // options here

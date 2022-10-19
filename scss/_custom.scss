@@ -62,7 +62,12 @@ a.text-primary {
     color: $sub-header-color;
   }
 }
-
+.font-light{
+  font-family: $font-family-base-light;
+}
+.font-thin{
+  font-family: $font-family-base-thin;
+}
 .mt-10 {
   margin-top: 10rem;
 }
