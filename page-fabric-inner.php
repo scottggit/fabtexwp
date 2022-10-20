@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <div class="fabric-container">
+                <div class="fabric-container mb-4 mb-md-0">
                     <div class="fabric-portfolio">
                         <img src="<?php bloginfo('template_directory') ?>/dist/img/fabric/f11@2x.jpg" alt="Fabric" class="fabric-portfolio-main-img img-fluid">
                         <div class="fabric-portfolio-info">
@@ -38,7 +38,7 @@
                     </span>
                 </div>
             </div>
-            <div class="col-md-6 offset-md-1">
+            <div class="col-xl-6 col-md-7 offset-xl-1">
                 <?php include('inc/fabric-detail.php')?>
             </div>
         </div>

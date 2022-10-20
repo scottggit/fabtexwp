@@ -3,28 +3,28 @@
     <span class="h3 d-block mb-5"><?php the_field('color_range') ?></span>
     <div class="card mb-5">
         <div class="row">
-            <div class="col-lg-4 border-right-lg-r py-4 px-4 px-lg-5">
+            <div class="col-lg-4 col-sm-6 border-right-lg-r py-4 px-4 px-xl-5">
                 <div class="col-lg-12 col-6 mb-3">
                     <span class="d-block text-small text-dark-f">Application</span>
                     <span class="text-smaller font-light text-dark-f"><?php the_field('applications') ?></span>
                 </div>
                 <div class="col-lg-12 col-6 mb-3">
                     <span class="d-block text-small text-dark-f">Maximum Width</span>
-                    <span class="text-smaller font-light text-dark-f">110”</span>
+                    <span class="text-smaller font-light text-dark-f"><?php the_field('bolt_width') ?>”</span>
                 </div>
                 <div class="col-lg-12 col-6 mb-3">
                     <span class="d-block text-small text-dark-f">Material</span>
-                    <span class="text-smaller font-light text-dark-f">Polyester</span>
+                    <span class="text-smaller font-light text-dark-f"><?php the_field('materials') ?></span>
                 </div>
                 <div class="col-lg-12 col-6 mb-3">
                     <span class="d-block text-small text-dark-f">Fabric Type</span>
                     <span class="text-smaller font-light text-dark-f">Woven</span>
                 </div>
             </div>
-            <div class="col-lg-4 border-right-lg-r py-4 px-4 px-lg-5">
+            <div class="col-lg-4 col-sm-6 border-right-lg-r py-4 px-4 px-xl-5">
                 <div class="col-lg-12 col-6 mb-3">
                     <span class="d-block text-small text-dark-f">Design</span>
-                    <span class="text-smaller font-light text-dark-f">Patterned</span>
+                    <span class="text-smaller font-light text-dark-f"><?php the_field('group') ?></span>
                 </div>
                 <div class="col-lg-12 col-6 mb-3">
                     <span class="d-block text-small text-dark-f">Openness</span>
@@ -43,7 +43,7 @@
                     <span class="text-smaller font-light text-dark-f">No</span>
                 </div>
             </div>
-            <div class="col-lg-4 py-4 px-4 px-lg-5">
+            <div class="col-lg-4 col-sm-6 py-4 px-4 px-xl-5">
                 <div class="col-lg-12 col-6 mb-3">
                     <span class="d-block text-small text-dark-f">Reversible</span>
                     <span class="text-smaller font-light text-dark-f">No</span>
@@ -64,7 +64,7 @@
         </div>
     </div>
     <div class="d-flex flex-wrap gap-4">
-        <a href="#" class="btn btn-outline-white btn-pin">
+        <a href="javascript:void(0)" class="btn btn-outline-white btn-pin add_to_sample">
             ADD TO SAMPLE BOARD
         </a>
         <a href="#" class="btn btn-outline-white">
