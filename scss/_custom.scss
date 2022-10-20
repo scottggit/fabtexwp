@@ -62,12 +62,7 @@ a.text-primary {
     color: $sub-header-color;
   }
 }
-.font-light{
-  font-family: $font-family-base-light;
-}
-.font-thin{
-  font-family: $font-family-base-thin;
-}
+
 .mt-10 {
   margin-top: 10rem;
 }
@@ -83,5 +78,56 @@ a.text-primary {
   letter-spacing: 1.2px;
   &-3 {
     letter-spacing: 3.2px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px !important;
+  }
+}
+
+.pdf-btn {
+  border: 1px solid #262831;
+  border-radius: 100px;
+  padding: 0.8rem 3rem 0.8rem 3rem;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background: url(../../dist/img/pdf-btn.svg);
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+    background-size: contain;
+    transform: translate(120%, -50%);
+    left: 00%;
+    top: 50%;
   }
 }

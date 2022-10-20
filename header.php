@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Fabtex</title>
+
 
     <link
       rel="stylesheet"
@@ -61,9 +61,7 @@
                            <li class="menu-item has-mega-menu">
                               <a class="item" href="<?php echo get_site_url() ?>/#">Hospitality</a>
                               <div class="mega-menu">
-                                 <h6 class="welcome-mega-menu">
-                                 Window Treatments
-                                 </h6>
+                          
                                  <div class="blocks row">
                                     <div class="col-12 block">
                                       
@@ -171,17 +169,35 @@
          </div>
       </div>
 
-
+      <?php 
+    global $post;
+    $post_slug = $post->post_name;
+  
+?>
 
 
     <nav
-      class="navbar bi-navbar fixed-top navbar-expand-lg navbar-light px-xxl-5 py-lg-4 mt-3" data-aos="fade-down"
+      class="navbar bi-navbar <?php   if($post_slug=='healthcare-manual'){echo 'white-nav';} ?> fixed-top navbar-expand-lg navbar-light px-xxl-5 py-lg-4 mt-3" data-aos="fade-down"
          
          data-aos-offset="0"
          data-aos-duration="2000"
     >
       <div class="container-fluid px-lg-3">
-        <a class="navbar-brand logo" href="/"><img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt=""></a>
+        <a class="navbar-brand logo" href="/">
+        <?php   if($post_slug=='healthcare-manual'){ ?>
+          
+          <img src="<?php bloginfo('template_directory')?>/dist/img/logo-white.png" alt="">
+        <?php
+        }else{
+          ?>
+          <img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt="">
+       <?php }   ?>
+
+
+    
+       
+
+        </a>
 
         <div class="col-auto d-xl-none">          
                      <a class="btn-burger" href="javascript:void(0)">
@@ -439,7 +455,7 @@
             </button>
           </form>
 
-          <div class="btn-burger">
+          <div class="btn-burger btn-burger-desktop">
             <span></span>
             <span></span>
             <span></span>

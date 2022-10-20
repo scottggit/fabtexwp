@@ -1,5 +1,5 @@
 .bi-navbar {
-  background-color: $white;
+  background-color: transparent;
   /* box-shadow: 0 0 16px 4px rgba(36, 47, 95, 0.1); */
   .navbar-brand.logo {
     font-size: 1.5rem;
@@ -48,6 +48,21 @@
       & > a {
         color: $white;
       }
+    }
+  }
+  &.white-nav {
+    .nav-item {
+      a {
+        color: $white;
+      }
+    }
+
+    .btn-search .fa-magnifying-glass::before {
+      color: $white;
+    }
+
+    .btn-burger-desktop span {
+      background-color: $white;
     }
   }
 }
@@ -422,6 +437,9 @@
         opacity: 1;
         visibility: visible;
         transform: scale(1, 1);
+        @media screen and (max-width: 992px) {
+          padding: 2rem;
+        }
       }
     }
     &.current-menu-item {
@@ -867,4 +885,31 @@
     position: static;
     padding: 1rem 0;
   }
+}
+
+.btn-burger-desktop {
+  width: 2.625rem;
+  position: relative;
+  cursor: pointer;
+  margin-left: 1.25rem;
+  transform: rotate(180deg);
+}
+.btn-burger-desktop span {
+  height: 0.1rem;
+  background-color: #000;
+  border-radius: 2px;
+  display: block;
+}
+
+.btn-burger-desktop span:nth-child(2) {
+  width: 100%;
+  margin-top: 0.3rem;
+}
+.btn-burger-desktop span:nth-child(1) {
+  width: 60%;
+}
+
+.btn-burger-desktop span:last-child {
+  width: 100%;
+  margin-top: 0.3rem;
 }

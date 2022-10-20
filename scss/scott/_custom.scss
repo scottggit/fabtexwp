@@ -448,3 +448,91 @@ footer .nav-footer li {
     stroke-dashoffset: 0;
   }
 }
+
+.banner-wrap {
+  position: relative;
+  .full-banner-title {
+    width: auto;
+    position: absolute;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    bottom: 0;
+    background: $white;
+    padding: 2rem;
+  }
+}
+.resource-wrap-inner {
+  border: 2px #d6d6d6 dashed;
+  padding: 4rem;
+  border-radius: 10px;
+}
+
+.resources-section .resource-wrap {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 30px;
+}
+
+.resources-section {
+  background: url(../img/resource-back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.resources-section > .container:before {
+  top: 0;
+  left: 0.9rem;
+  border-width: 2px 0 0 2px;
+  border-radius: 25px 0 0 0;
+}
+
+.resources-section > .container:after {
+  top: 0;
+  right: 0.9rem;
+  border-width: 2px 2px 0 0;
+
+  border-radius: 0 25px 0 0;
+}
+
+.resources-section > .container {
+  position: relative;
+}
+.resources-section > .container:before,
+.resources-section > .container:after,
+.resources-section > .container > :first-child:before,
+.resources-section > .container > :first-child:after {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-color: #f15d22;
+  border-style: solid;
+  content: " ";
+}
+
+.resources-section > .container > :first-child:before {
+  bottom: 0;
+  right: 0.9rem;
+  border-width: 0 2px 2px 0;
+  border-radius: 0 0 25px 0;
+}
+.resources-section > .container > :first-child:after {
+  bottom: 0;
+  left: 0.9rem;
+  border-width: 0 0 2px 2px;
+  border-radius: 0 0 0 25px;
+}
+
+.resource-wrap-inner > .row {
+  align-items: center;
+}
+
+.resource-wrap-inner > .row span,
+.resource-wrap-inner > .row h3 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.resource-wrap-inner > .row span {
+  color: #c9c9c9;
+}
