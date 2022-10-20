@@ -11,207 +11,147 @@
         <h3 class="text-[24px]">Filter By</h3>
         <span class="text-[14px]">CLEAR ALL</span>
     </div>
-    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
-        <p class="filter-title text-dark"><strong>Application</strong></p>
-        <ul class="filter-input-container mt-3">
-            <li class="mb-2">
-                <input type="checkbox" name="application" id="blinds">
-                <label for="blinds">Blinds (22)</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="application" id="draperies">
-                <label for="draperies">Draperies (4)</label>
-            </li>
-            <li class="">
-                <input type="checkbox" name="application" id="roller_shades">
-                <label for="roller_shades">Roller Shades (15)</label>
-            </li>
-        </ul>
-    </div>
-    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
-        <p class="filter-title text-dark"><strong>Material</strong></p>
-        <ul class="filter-input-container mt-3">
-            <li class="mb-2">
-                <input type="checkbox" name="material" id="linen">
-                <label for="linen">Linen & Natural Weaves</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="material" id="Papel">
-                <label for="Papel">Papel</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="material" id="Polyester">
-                <label for="Polyester">Polyester</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="material" id="Sheers">
-                <label for="Sheers">Sheers</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="material" id="Silk">
-                <label for="Silk">Silk</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="material" id="Synthetic">
-                <label for="Synthetic">Synthetic</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="material" id="Velvet">
-                <label for="Velvet">Velvet</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="material" id="Vinyl">
-                <label for="Vinyl">Vinyl</label>
-            </li>
-            <li class="">
-                <input type="checkbox" name="material" id="Wool">
-                <label for="Wool">Wool & Wool Mixes</label>
-            </li>
-        </ul>
-    </div>
-    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
-        <p class="filter-title text-dark"><strong>Maximum Width</strong></p>
-        <ul class="filter-input-container mt-3">
-            <li class="mb-2">
-                <input type="checkbox" name="max_width" id="max_width_54">
-                <label for="max_width_54">54”</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="max_width" id="max_width_72">
-                <label for="max_width_72">72”</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="max_width" id="max_width_94">
-                <label for="max_width_94">94”</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="max_width" id="max_width_110">
-                <label for="max_width_110">110”</label>
-            </li>
-            <li class="">
-                <input type="checkbox" name="max_width" id="max_width_118">
-                <label for="max_width_118">118”</label>
-            </li>
-        </ul>
-    </div>
-    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
-        <p class="filter-title text-dark"><strong>Patterns & Textures</strong></p>
-        <ul class="filter-input-container mt-3">
-            <li class="mb-2">
-                <input type="checkbox" name="patterns" id="Solids">
-                <label for="Solids">Solids</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="patterns" id="Patterned">
-                <label for="Patterned">Patterned</label>
-            </li>
-            <li class="">
-                <input type="checkbox" name="patterns" id="Texture">
-                <label for="Texture">Texture</label>
-            </li>
-        </ul>
-    </div>
-    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
-        <p class="filter-title text-dark"><strong>Fabric Type</strong></p>
-        <ul class="filter-input-container mt-3">
-            <li class="mb-2">
-                <input type="checkbox" name="fabric_type" id="Blackout">
-                <label for="Blackout">Blackout</label>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="fabric_type" id="UV_Printed">
-                <label for="UV_Printed">UV Printed</label>
-            </li>
-            <li class="">
-                <input type="checkbox" name="fabric_type" id="Woven">
-                <label for="Woven">Woven</label>
-            </li>
-        </ul>
-    </div>
-    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm filter-openness_range">
-        <p class="filter-title text-dark"><strong>Openness</strong></p>
-        <ul class="filter-input-container mt-3">
-            <p class="openness_range_label d-flex justify-content-between">
-                <span>0%</span>
-                <span>5%</span>
-                <span>10%</span>
-            </p>
-            <input type="range" min="0" max="10" value="2" id="fader" step="1">
-        </ul>
-    </div>
-    <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
-        <p class="filter-title text-dark"><strong>Color</strong></p>
-        <ul class="mt-3 color-selected">
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_1">
-                <label for="color_1"><span class="light-netural"></span></label>
-                <span class="color_title">Light Neturals</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_2">
-                <label for="color_2"><span class="black-gray"></span></label>
-                <span class="color_title">Blacks/Grays</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_3">
-                <label for="color_3"><span class="tan-taupe"></span></label>
-                <span class="color_title">Tan/Taupes</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_4">
-                <label for="color_4"><span class="green"></span></label>
-                <span class="color_title">Greens</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_5">
-                <label for="color_5"><span class="blue"></span></label>
-                <span class="color_title">Blues</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_6">
-                <label for="color_6"><span class="metalic"></span></label>
-                <span class="color_title">Metalics</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_7">
-                <label for="color_7"><span class="multi-color"></span></label>
-                <span class="color_title">Multi-color</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_8">
-                <label for="color_8"><span class="white"></span></label>
-                <span class="color_title">Whites</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_9">
-                <label for="color_9"><span class="brown"></span></label>
-                <span class="color_title">Browns</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_10">
-                <label for="color_10"><span class="red"></span></label>
-                <span class="color_title">Red</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_11">
-                <label for="color_11"><span class="orange"></span></label>
-                <span class="color_title">Oranges</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_12">
-                <label for="color_12"><span class="yellow"></span></label>
-                <span class="color_title">Yellows</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_13">
-                <label for="color_13"><span class="purple"></span></label>
-                <span class="color_title">Purples</span>
-            </li>
-            <li class="mb-2">
-                <input type="checkbox" name="color_selected" id="color_14">
-                <label for="color_14"><span class="pink"></span></label>
-                <span class="color_title">Pinks</span>
-            </li>
-        </ul>
-    </div>
+
+
+    <form method="GET">
+        <input type="hidden" value="<?php echo $_GET['colors']; ?>" name="colors" >
+
+        <button class="hover:bg-[#262831ab] py-[10px] text-white w-100 mb-4 mt-4 bg-[#262831] rounded-[20px] uppercase text-[15px]" type="submit">Search</button>
+
+        <div class="box bg-white filter-application filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
+
+            <p class="filter-title text-dark"><strong>Applications</strong></p>
+            <ul class="mt-3">
+                <?php 
+                $applications = array('Bed%20Scarves',
+                'Bed%20Skirts',
+                'Bed%20Throws',
+                'Cornice%20Boxes',
+                'Draperies',
+                'Duverlets',
+                'Duvets',
+                'Pillows',
+                'Privacy%20Curtains',
+                'Quilted%20Coverlet',
+                'Roman%20Shades',
+                'Shower%20Curtains',
+                'Top%20Sheets',
+                'Upholstery',
+                'Valances');
+
+                foreach( $applications as $application):
+                ?>
+                <li class="mb-2">
+                    <input class="focus:ring-0 focus:shadow-none focus:ring-offset-0 w-[20px] h-[20px] text-[#F15D22] rounded border-gray-300 bg-gray-100 focus:outline-none" <?php if($_GET[$application] == 'on'): ?> checked <?php endif; ?>  type="checkbox" name="<?php echo $application; ?>" id="<?php echo $application; ?>">
+                    <label for="<?php echo $application; ?>"  class="text-[#808080] font-weight-light text-[15px] ml-[7px]"> <?php echo preg_replace('/%20/', ' ', $application); ?></label>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+            
+            <div class="mt-3 ">
+                <a id="application-see-more" class="cursor-pointer text-[14px]"><u> See More </u></a>
+            </div>
+    
+        </div>
+        <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
+            <p class="filter-title text-dark"><strong>Materials</strong></p>
+            <ul class="mt-3">
+                <?php $materials = array('Acrylic',
+                    'Chenille',
+                    'Cotton',
+                    'Faux%20Fur',
+                    'Flannel',
+                    'Hemp',
+                    'Jacquard',
+                    'Jersey',
+                    'Linen',
+                    'Metelasse',
+                    'Microfriber',
+                    'Percale',
+                    'Polyester',
+                    'Satin',
+                    'Tencel',
+                    'Velvet',
+                    'Wool',
+                );
+                foreach($materials as $material):
+                ?>
+                <li class="mb-2">
+                    <input class="focus:ring-0 focus:shadow-none focus:ring-offset-0 w-[20px] h-[20px] text-[#F15D22] rounded border-gray-300 bg-gray-100 focus:outline-none" type="checkbox" <?php if($_GET[$material] == 'on'): ?> checked <?php endif; ?> name="<?php echo $material; ?>" id="<?php echo $material; ?>">
+                    <label for="<?php echo $material; ?>" class="text-[#808080] font-weight-light text-[15px] ml-[7px]"><?php echo preg_replace('/%20/', ' ', $material); ?></label>
+                </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
+            <p class="filter-title text-dark"><strong>Maximum Width</strong></p>
+            <ul class="mt-3">
+
+                <?php $widths = ['54','72','94','110','114'] ?>
+                <?php foreach($widths as $width): ?>
+                    <li class="mb-2">
+                        <input class="focus:ring-0 focus:shadow-none focus:ring-offset-0 w-[20px] h-[20px] text-[#F15D22] rounded border-gray-300 bg-gray-100 focus:outline-none" type="checkbox" <?php if($_GET[$width] == 'on'): ?> checked <?php endif; ?> name="<?php echo $width; ?>" id="<?php echo $width; ?>">
+                        <label for="<?php echo $width; ?>" class=" <?php if($_GET[$width] == 'on'): ?> font-weight-bold text-[#262831] <?php else: ?> text-[#808080] font-weight-light   <?php endif; ?> text-[15px] ml-[7px]"><?php echo $width; ?>"</label>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
+            <p class="filter-title text-dark"><strong>Patterns & Textures</strong></p>
+            <ul class="mt-3">
+                <?php $patterns = ['Patterned','Solids','Textured'] ?>
+                <?php foreach($patterns as $pattern): ?>
+                    <li class="mb-2">
+                        <input class="focus:ring-0 focus:shadow-none focus:ring-offset-0 w-[20px] h-[20px] text-[#F15D22] rounded border-gray-300 bg-gray-100 focus:outline-none" type="checkbox" <?php if($_GET[$pattern] == 'on'): ?> checked <?php endif; ?> name="<?php echo $pattern; ?>" id="<?php echo $pattern; ?>">
+                        <label for="<?php echo $pattern; ?>" class=" <?php if($_GET[$pattern] == 'on'): ?> font-weight-bold text-[#262831] <?php else: ?> text-[#808080] font-weight-light   <?php endif; ?> text-[15px] ml-[7px]"><?php echo $pattern; ?></label>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm">
+            <p class="filter-title text-dark"><strong>Fabric Type</strong></p>
+            <ul class="mt-3">
+                <li class="mb-2">
+                    <input type="checkbox" name="fabric_type" id="Blackout">
+                    <label for="Blackout">Blackout</label>
+                </li>
+                <li class="mb-2">
+                    <input type="checkbox" name="fabric_type" id="UV_Printed">
+                    <label for="UV_Printed">UV Printed</label>
+                </li>
+                <li class="">
+                    <input type="checkbox" name="fabric_type" id="Woven">
+                    <label for="Woven">Woven</label>
+                </li>
+            </ul>
+        </div>
+        <div class="box bg-white filter-item rounded-2xl p-3 p-lg-4 mb-4 shadow-sm filter-openness_range">
+            <p class="filter-title text-dark"><strong>Openness</strong></p>
+            <ul class="mt-3">
+                <p class="openness_range_label d-flex justify-content-between">
+                    <span>0%</span>
+                    <span>5%</span>
+                    <span>10%</span>
+                </p>
+                <input type="range" min="0" max="10" value="2" id="fader" step="1">
+            </ul>
+        </div>
+    </form>
 </div>
+
+<script>
+    jQuery(function() {
+
+        for(let i=1;i<=8;i++)
+        {
+            jQuery(`.filter-application ul li:nth-last-child(${i})`).hide();
+        }
+
+        $('#application-see-more').on('click', function(){
+            for(let i=1;i<=8;i++)
+            {
+                jQuery(`.filter-item ul li:nth-last-child(${i})`).show();
+            }
+        })
+    })
+</script>

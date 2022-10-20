@@ -7,7 +7,11 @@ $(".bg-img").each(function () {
   }
 });
 /* Vertical Tab Background Image */
-vert_tab($('.tab-vert .nav-link.active'));
+$('.tab-vert .nav-link').each(function () {
+  var imgPath = $(this).attr('data-bg-img');
+  $(this).css('background-image', "url(" + imgPath + ")");
+});
+/* vert_tab($('.tab-vert .nav-link.active'));
 $('.tab-vert').on('click', '.nav-link', function () {
   vert_tab($(this));
 });
@@ -15,7 +19,7 @@ function vert_tab(el) {
   $('.tab-vert .nav-link').css('background-image', "");
   var imgPath = el.attr('data-bg-img');
   el.css('background-image', "url(" + imgPath + ")");
-}
+} */
 /* Vertical Tab Background Image */
 $(".blog_inner_carousel").slick({
   autoplay: true,

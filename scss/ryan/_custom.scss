@@ -19,8 +19,10 @@ u.underline-primary {
 .pddt-8 {
     padding-top: 4rem;
 }
-.fs-18{
-    font-size: 1.125rem;
+.fs-lg-18{
+    @media screen and (min-width: 992px){
+        font-size: 1.125rem;
+    }
 }
 
 .filter-input-container input[type="checkbox"] {
@@ -886,7 +888,9 @@ p,
         text-align: left;
         background-position: center;
         background-size: cover;
-
+        &:not(.active){
+            background-image: none !important;
+        }
         &::after {
             content: '';
             position: absolute;
@@ -983,6 +987,7 @@ p,
             border-top-right-radius: 2rem;
         }
         button{
+            font-size: 1.5rem;
             padding: 1.5rem;
             border-top-left-radius: 2rem;
             border-top-right-radius: 2rem;
