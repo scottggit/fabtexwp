@@ -26120,6 +26120,8 @@ footer ul {
 }
 footer ul li {
   list-style: none;
+  display: flex;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   footer .nav-footer {
