@@ -7,9 +7,9 @@ $(".bg-img").each(function () {
   }
 });
 /* Vertical Tab Background Image */
-$('.tab-vert .nav-link').each(function () {
-  var imgPath = $(this).attr('data-bg-img');
-  $(this).css('background-image', "url(" + imgPath + ")");
+$(".tab-vert .nav-link").each(function () {
+  var imgPath = $(this).attr("data-bg-img");
+  $(this).css("background-image", "url(" + imgPath + ")");
 });
 /* vert_tab($('.tab-vert .nav-link.active'));
 $('.tab-vert').on('click', '.nav-link', function () {
@@ -32,6 +32,28 @@ $(".blog_slick").slick({
   responsive: [
     {
       breakpoint: 992,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
+$(".speciality_slick").slick({
+  slidesToShow: 1,
+  centerMode: false,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+      },
+    },
+    {
+      breakpoint: 767,
       settings: {
         arrows: false,
         slidesToShow: 1,

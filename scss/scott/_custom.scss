@@ -543,3 +543,39 @@ footer .nav-footer li {
 .contact-form.panel.last {
   margin-bottom: -7rem;
 }
+
+.speciality_slick .slick-slide {
+  height: 30rem;
+}
+
+.speciality_slick .slick-slide img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  object-position: center;
+}
+
+@media (min-width: 768px) {
+  .banner-desc h1 {
+    font-size: 4rem;
+  }
+}
+.breadcrumb-page SPAN {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.breadcrumb-page U {
+  font-family: "proxima-light";
+  color: #808080;
+  font-size: 1rem;
+}
+.no-underline {
+  text-decoration: none !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-desc {
+    padding-right: 4rem;
+  }
+}
