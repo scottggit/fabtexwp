@@ -793,8 +793,8 @@
           &.has-mega-menu {
             > .item {
               &:after {
-                content: "\e901";
-                transform: rotate(-90deg);
+                content: "\f107";
+
                 display: inline-block;
                 font-size: 0.8em;
                 margin-left: 7px;
@@ -808,7 +808,7 @@
           &.mega-menu-open {
             > .item {
               &:after {
-                transform: rotate(-270deg);
+                transform: rotate(180deg) !important;
                 top: 0;
               }
             }
@@ -912,4 +912,10 @@
 .btn-burger-desktop span:last-child {
   width: 100%;
   margin-top: 0.3rem;
+}
+
+.fixednav {
+  & > nav {
+    background: #fff;
+  }
 }

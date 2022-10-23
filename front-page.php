@@ -193,26 +193,6 @@
 <div class="floating-line-4"></div>
 </section>
 
-<div class="newsletter-wrap">
-  <div class="container px-5">
-
-    <div class="row newsletter-inner">
-      <div class="col-md-5">
-      <h3 class="text-light font-weight-bold text-[30px]" data-aos="fade-up"         
-          data-aos-offset="0"
-          data-aos-duration="2000">Sign Up For Inspiration, Discounts & More</h3>
-      </div>
-      <div class="col-md-7">
-      <form action="" data-aos="fade-up">
-      <input type="email" placeholder="Enter your email"/>
-      <button type="submit">Sign up</button>
-      </form>
-      </div>
-    </div>
-
-  </div>
-</div>
-
 
 <?php get_footer(); ?>
 <script>

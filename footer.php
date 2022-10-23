@@ -1,3 +1,22 @@
+<div class="newsletter-wrap">
+  <div class="container px-5">
+
+    <div class="row newsletter-inner">
+      <div class="col-md-5">
+      <h3 class="text-light font-weight-bold text-[30px]" data-aos="fade-up"         
+          data-aos-offset="0"
+          data-aos-duration="2000">Sign Up For Inspiration, Discounts & More</h3>
+      </div>
+      <div class="col-md-7">
+      <form action="" data-aos="fade-up">
+      <input type="email" placeholder="Enter your email"/>
+      <button type="submit">Sign up</button>
+      </form>
+      </div>
+    </div>
+
+  </div>
+</div>
 <footer>
       <div class="container">
         <div class="row">
@@ -136,6 +155,18 @@
     
 <script>
     $(document).ready(function() {
+      $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    //>=, not <=
+    if (scroll >= 100) {
+      //clearHeader, not clearheader - caps H
+      $("body").addClass("fixednav");
+    } else {
+      $("body").removeClass("fixednav");
+    }
+  }); //missing );
+
         $('.videoPopup').magnificPopup({
             type: 'iframe',
             mainClass: 'mfp-fade',
@@ -146,7 +177,81 @@
         });
     });
 </script>
- 
+<script>
+      updateList();
+      function updateList()
+      {
+        let cookie = getCookie('fabric-list');
+        if(cookie)
+        {
+          cookie = JSON.parse(cookie);
+          cookie.forEach(res => {
+            $('.fabric-list .row').append(`<div class="fabric-col col-4 mb-1 p-1 relative">
+                  <div data-id="${res.id}" class="remove-fabric-list cursor-pointer top-[-3px] right-[-3px] w-[22px] h-[22px] rounded-[5000px] absolute text-dark bg-white z-[9]  py-[1px] px-[7px]">&times;</div>
+                  <a href="" class="fabric-item rounded-[7px] pb-0">
+                      <div class="fabric-img-container bg-img">
+                          <img src="${res.src}" alt="Fabric" class="fabric-img">
+                      </div>
+                  </a>
+              </div>`);
+          });
+        }
+      }
+
+      function getCookieWithName(name, val) {
+        const value = `; ${val}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+      }
+
+      function listenCookieChange(callback, interval = 1000) {
+        let lastCookie = document.cookie;
+        setInterval(()=> {
+          let cookie = document.cookie;
+          if (cookie !== lastCookie) {
+            try {
+              callback({oldValue: lastCookie, newValue: cookie});
+            } finally {
+              lastCookie = cookie;
+            }
+          }
+        }, interval);
+      }
+
+      listenCookieChange(({oldValue, newValue})=> {
+        newValue = getCookieWithName('fabric-list', newValue);
+        cookie = JSON.parse(newValue);
+
+        $('.fabric-list .row').html('');
+        if(cookie)
+          {
+            cookie.forEach(res => {
+              $('.fabric-list .row').append(`<div class="fabric-col col-4 mb-1 p-1 relative">
+                    <div data-id="${res.id}" class="remove-fabric-list cursor-pointer top-[-3px] right-[-3px] w-[22px] h-[22px] rounded-[5000px] absolute text-dark bg-white z-[9]  py-[1px] px-[7px]">&times;</div>
+                    <a href="" class="fabric-item rounded-[7px] pb-0">
+                        <div class="fabric-img-container bg-img">
+                            <img src="${res.src}" alt="Fabric" class="fabric-img">
+                        </div>
+                    </a>
+                </div>`);
+            });
+          }
+      }, 1000);
+
+      
+      $(function(){
+        $(document).on('click', '.remove-fabric-list', function(e){
+          let id = $(this).data('id');
+          let cookie = getCookie('fabric-list');
+          if(cookie)
+          {
+            cookie = JSON.parse(cookie);
+            cookie = cookie.filter(res => res.id != id);
+            setCookie('fabric-list', JSON.stringify(cookie), 10);
+          }
+        });
+      });
+</script>
   <?php wp_footer(); ?>
   </body>
 </html>

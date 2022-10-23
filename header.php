@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+
+    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/dist/css/styles.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/style.css" />
 
 
     <link
@@ -19,15 +23,12 @@
       integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/dist/css/styles.css" />
+    />    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-
-    
-    <span class="bg-grad"></span>
-
+  <body  <?php echo body_class(); ?>>
+  
 
     
   <div class="mobile-menu ">
@@ -59,7 +60,7 @@
                            </li>
                       
                            <li class="menu-item has-mega-menu">
-                              <a class="item" href="<?php echo get_site_url() ?>/#">Hospitality</a>
+                              <a class="item" href="#">Hospitality</a>
                               <div class="mega-menu">
                           
                                  <div class="blocks row">
@@ -126,19 +127,19 @@
                            </li>
                      
                            <li class="menu-item">
-                              <a class="item" href="<?php echo get_site_url() ?>/#">Healthcare</a>
+                              <a class="item" href="<?php echo get_site_url() ?>/healthcare-manual">Healthcare</a>
                            </li>
                            <li class="menu-item">
-                              <a class="item" href="<?php echo get_site_url() ?>/#">Custom Prints</a>
+                              <a class="item" href="#">Custom Prints</a>
                            </li>
                            <li class="menu-item">
-                              <a class="item" href="<?php echo get_site_url() ?>/#">For Brands</a>
+                              <a class="item" href="#">For Brands</a>
                            </li>
                            <li class="menu-item">
-                              <a class="item" href="<?php echo get_site_url() ?>/#">For Designers</a>
+                              <a class="item" href="#">For Designers</a>
                            </li>
                            <li class="menu-item">
-                              <a class="item" href="<?php echo get_site_url() ?>/#">The Feterik Leadership</a>
+                              <a class="item" href="#">The Feterik Leadership</a>
                            </li>
                     
                         </ul>
@@ -169,15 +170,11 @@
          </div>
       </div>
 
-      <?php 
-    global $post;
-    $post_slug = $post->post_name;
-  
-?>
+    <span class="bg-grad"></span>
 
-
+    
     <nav
-      class="navbar bi-navbar <?php   if($post_slug=='healthcare-manual'){echo 'white-nav';} ?> fixed-top navbar-expand-lg navbar-light px-xxl-5 py-lg-4 mt-3" data-aos="fade-down"
+      class="navbar bi-navbar <?php   if($post_slug=='healthcare-manual'){echo 'white-nav';} ?> fixed-top navbar-expand-lg navbar-light px-xxl-5 pt-lg-4 " data-aos="fade-down"
          
          data-aos-offset="0"
          data-aos-duration="2000"
@@ -219,7 +216,7 @@
             </li>
 
             <li class="nav-item menu-item has-mega-menu">
-              <a class="nav-link" href="our_process.html">Hospitality</a>
+              <a class="nav-link" href="#">Hospitality</a>
               <div class="mega-menu">
                                   
                                        <div class="row align-items-center">
@@ -298,7 +295,7 @@
 
 
             <li class="nav-item ">
-              <a class="nav-link" href="credit_app.html">Healthcare</a>
+              <a class="nav-link" href="<?php echo get_site_url() ?>/healthcare-manual">Healthcare</a>
             </li>
 <li class=" nav-item menu-item has-mega-menu">
   <a class="nav-link" href="credi">For Brands</a>
@@ -464,10 +461,67 @@
       </div>
     </nav>
 
-    <div class="fixedbtn-wrap d-flex">
-<div class="fixedbtn">
-     
-      <a href=""><i class="fa-solid fa-arrow-right mb-3"></i>FABRIC SAMPLE</a>
+    <div class="fixedbtn-wrap d-flex w-[46px]  drop-shadow-[0px_0px_8px_#91919119] ">
+      <div class="fixedbtn">
+        <a href="javascript:void(0)" class="mr-[7px]"><i class="fa-solid fa-arrow-right mb-3"></i>FABRIC SAMPLE</a>
+      </div>
+      <div class="bg-white px-2 py-2 fabric-list w-[278px]" style="display: none">
+
+          <div class="row m-1 h-[174px] overflow-scroll">
+
+          </div>
+
+          <div class="d-flex justify-between mt-2"> 
+            <button class="border-[#262831] uppercase border-[1px] rounded-[20px] text-[#262831] text-[13px] px-[12px] py-1"> Email </button>
+            <button class="border-[#262831] uppercase border-[1px] rounded-[20px] text-[#262831] text-[13px] px-[12px] py-1"> Request </button>
+            <button class="border-[#262831] uppercase border-[1px] rounded-[20px] text-[#262831] text-[13px] px-[12px] py-1"> Download </button>
+          </div>
+
+      </div>
     </div>
-    </div>
-      <?php wp_head();?>
+
+    <?php wp_head();?>
+    
+
+    <script>
+
+      function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+        let expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+
+      function getCookie(cookieName)  {
+          var name = cookieName + "=";
+          var allCookieArray = document.cookie.split(';');
+          for(var i=0; i<allCookieArray.length; i++)
+          {
+            var temp = allCookieArray[i].trim();
+            if (temp.indexOf(name)==0)
+            return temp.substring(name.length,temp.length);
+       	  }
+        	return "";
+      }
+
+      document.querySelector('.fixedbtn').addEventListener('click', (e) => {
+        
+        if($('.fixedbtn-wrap').hasClass('w-[321px]'))
+        {
+          $('.fixedbtn-wrap').removeClass('w-[321px]');
+          $('.fixedbtn-wrap').addClass(' w-[46px]');
+   
+          $('.fixedbtn i').addClass('fa-arrow-right');
+          $('.fixedbtn i').removeClass('fa-arrow-left');
+          $('.fabric-list').hide();
+
+        }else{
+          $('.fixedbtn-wrap').addClass('w-[321px]');
+          $('.fixedbtn-wrap').removeClass(' w-[46px]');
+          
+          $('.fixedbtn i').addClass('fa-arrow-left');
+          $('.fixedbtn i').removeClass('fa-arrow-right');
+          $('.fabric-list').show();
+        }
+      })  
+    </script>
