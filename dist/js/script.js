@@ -40,6 +40,17 @@ $(".blog_slick").slick({
   ],
 });
 
+$('.fab-wizard').on('click', '[data-wizard-step]', function(){
+  var toggleStep = $(this).attr('data-wizard-step');
+  var wizardContainer = $(this).closest('.fab-wizard').find('.wizard-step-container');
+  var wizardHeader = $(this).closest('.fab-wizard').find('.wizard-step-header');
+  wizardContainer.find('.wizard-step').slideUp('fast').removeClass('active');
+  wizardContainer.find('.'+toggleStep).slideDown('fast').addClass('active');
+  if(!wizardHeader.find('.'+toggleStep).hasClass('completed')){
+    wizardHeader.find('.'+toggleStep).prev().addClass('completed').removeClass('active');
+    wizardHeader.find('.'+toggleStep).addClass('active');
+  }
+});
 $(".speciality_slick").slick({
   slidesToShow: 1,
   centerMode: false,

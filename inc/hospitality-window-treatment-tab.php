@@ -33,7 +33,7 @@
             </div>
             <div class="tab-pane fade px-sm-4 px-lg-5" id="v-pills-blinds" role="tabpanel" aria-labelledby="v-pills-blinds-tab" tabindex="0">
                 <h2 class="mb-4 text-[34px]"><u class="underline-primary thick">Blinds</u></h2>
-                <img src="<?php bloginfo('template_directory') ?>/dist/img/window-treatments/Blinds.jpg" alt="Blinds" class="img-fluid mb-4">
+                <img src="<?php bloginfo('template_directory') ?>/dist/img/window-treatments/blinds.jpg" alt="Blinds" class="img-fluid mb-4">
                 <a href="#" class="btn btn-outline-white text-uppercase">SEE Blinds OPTIONS</a>
             </div>
             <div class="tab-pane fade px-sm-4 px-lg-5" id="v-pills-top-treatments" role="tabpanel" aria-labelledby="v-pills-top-treatments-tab" tabindex="0">
