@@ -579,3 +579,8 @@ footer .nav-footer li {
     padding-right: 4rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  .collapse {
+    visibility: visible !important;
+  }
+}

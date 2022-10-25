@@ -25,7 +25,7 @@
       referrerpolicy="no-referrer"
     />    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-    <script src="https://cdn.tailwindcss.com"></script>
+ <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body  <?php echo body_class(); ?>>
   
@@ -171,6 +171,11 @@
       </div>
 
     <span class="bg-grad"></span>
+    <?php 
+    global $post;
+    $post_slug = $post->post_name;
+  
+?>
 
     
     <nav
@@ -183,11 +188,12 @@
         <a class="navbar-brand logo" href="/">
         <?php   if($post_slug=='healthcare-manual'){ ?>
           
-          <img src="<?php bloginfo('template_directory')?>/dist/img/logo-white.png" alt="">
+          <img src="<?php bloginfo('template_directory')?>/dist/img/logo-white.png" alt="" class="white-logo">
+          <img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt=""  class="black-logo">
         <?php
         }else{
           ?>
-          <img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt="">
+          <img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt=""  class="black-logo">
        <?php }   ?>
 
 
@@ -219,7 +225,7 @@
               <a class="nav-link" href="#">Hospitality</a>
               <div class="mega-menu">
                                   
-                                       <div class="row align-items-center">
+                                       <div class="row">
                                         
                                           <div class="col-md-8 col-left">
                                           <div class="blocks row">
@@ -277,11 +283,13 @@
                                      
                                              </div>
                                           </div>
-                                          <div class="col-md col-right">
+                                          <div class="col-md col-right" style="background:url('<?php bloginfo('template_directory')?>/dist/img/process-back.jpg');background-size:cover;">
                                            
-                                       <div class="row align-items-center">
+                                       <div class="row align-items-center h-100">
 <div class="col-right-wrap">
-  <h4>Our Process</h4>
+      
+<img src="<?php bloginfo('template_directory')?>/dist/img/process.png" alt="" class="mb-5">
+  <h3>Our Process</h3>
   <p>Working with us for the first time?</p>
   <p>Here's what to except.</p>
 </div>
@@ -304,52 +312,13 @@
                                   <div class="row align-items-center">
                                    
                                      <div class="col-md-7 col-left">
-                                     <div class="blocks row">
-                                         
-                                           <div class="col-md-2 block">
-                                      
-                                           </div>
-                                           <div class="col-md-2 block">
-                                      
-                                      </div>
-                                      <div class="col-md-2 block">
-                                      
-                                      </div>
-                                      <div class="col-md-2 block">
-                                      
-                                      </div>
-                                
-                                        </div>
-                                        <div class="blocks row">
-                                         
-                                         <div class="col-md-2 block">
-                                    
-                                         </div>
-                                         <div class="col-md-2 block">
-                                      
-                                      </div>
-                                      <div class="col-md-2 block">
-                                      
-                                      </div>
-                                      <div class="col-md-2 block">
-                                      
-                                      </div>
-                              
-                                      </div>
+                                  
                                       <div class="blocks row">
                                          
-                                         <div class="col-md-2 block">
+                                  <a href="#">
                                     
-                                         </div>
-                                         <div class="col-md-2 block">
-                                      
-                                      </div>
-                                      <div class="col-md-2 block">
-                                      
-                                      </div>
-                                      <div class="col-md-2 block">
-                                      
-                                      </div>
+<img src="<?php bloginfo('template_directory')?>/dist/img/specs-by-brand.jpg" alt="" class="w-100">
+                                  </a>
                               
                                       </div>
                                      </div>
@@ -391,15 +360,15 @@
               <a class="nav-link" href="contact_us.html">For Designers</a>
               <div class="mega-menu">
                                   
-                                  <div class="row align-items-center">
+                                  <div class="row ">
                                    
-                                     <div class="col-md-5 col-left">
-                                     <div class="blocks row">
+                                     <div class="col-md-5 col-left" style="background-image: url(<?php bloginfo('template_directory')?>/dist/img/room-visualizer.jpg);background-size:cover;">
+                                     <div class="blocks row align-items-center  h-100">
                                          
                                            <div class="col-md-12 block">
-                                      <h3>Room Visualizer <i class="fa-solid fa-arrow-right"></i></h3>
-                                      <p>mix and match fabrics to style our virtual room according to your vision.</p>
-                                      <p></p>
+                                      <h3 style="color:#fff;">Room Visualizer <i class="fa-solid fa-arrow-right"></i></h3>
+                                      <p  style="color:#fff;">mix and match fabrics to style our virtual room according to your vision.</p>
+                                      
                                            </div>
                             
                               

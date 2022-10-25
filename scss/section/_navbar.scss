@@ -566,7 +566,7 @@
     border-radius: 1rem;
     background-color: #f5feff;
     top: 100%;
-    padding: 0rem 10rem 0rem 6rem;
+    padding: 0rem 0rem 0rem 0rem;
     transform: scale(1, 0.85);
     transform-origin: top;
     opacity: 0;
@@ -587,9 +587,21 @@
       flex: 0 0 35.333333%;
       max-width: 35.333333%;
     }
+    .col-right-wrap {
+      padding: 3rem 5rem;
+      @media screen and (max-width: 992px) {
+        padding: 1rem 2rem;
+      }
+      h3 {
+        color: #fff;
+      }
+      p {
+        color: #fff;
+      }
+    }
     .blocks {
       .block {
-        padding: 3rem 2rem;
+        padding: 3rem 5rem;
         @media screen and (max-width: 992px) {
           padding: 1rem 2rem;
         }
@@ -913,9 +925,29 @@
   width: 100%;
   margin-top: 0.3rem;
 }
-
+.white-nav {
+  .black-logo {
+    display: none;
+  }
+}
 .fixednav {
   & > nav {
     background: #fff;
+    .white-logo {
+      display: none;
+    }
+    .black-logo {
+      display: block;
+    }
+  }
+
+  & > nav {
+    &.white-nav {
+      .nav-item {
+        a {
+          color: #000;
+        }
+      }
+    }
   }
 }
