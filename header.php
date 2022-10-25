@@ -213,10 +213,10 @@
                   </div>
 
         <div
-          class="collapse navbar-collapse justify-content-lg-end ms-xl-3 ms-xxl-5 main-nav"
+          class="collapse navbar-collapse justify-content-lg-center main-nav"
           id="bi-navbar"
         >
-          <ul class="nav-menu navbar-nav ms-lg-2 ms-xxl-5 mb-2 mb-lg-0">
+          <ul class="nav-menu navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
@@ -408,7 +408,7 @@
               >
             </li>
           </ul>
-
+<a href="<?php echo get_site_url() ?>/contact-us" class="px-xl-3 px-xxl-3"><img src="<?php bloginfo('template_directory')?>/dist/img/mail-ico.svg" alt="" class="white-logo"></a>
           <form action="#" class="search-box mr-2">
             <input
               type="search"
@@ -421,11 +421,11 @@
             </button>
           </form>
 
-          <div class="btn-burger btn-burger-desktop">
+          <!-- <div class="btn-burger btn-burger-desktop">
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </div> -->
         </div>
       </div>
     </nav>
