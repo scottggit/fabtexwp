@@ -26186,6 +26186,12 @@ a.text-primary {
 .white-nav .black-logo {
   display: none;
 }
+.white-nav .mail-icon rect {
+  fill: #fff;
+}
+.white-nav .mail-icon path {
+  fill: #000;
+}
 
 .fixednav > nav {
   background: #fff;
@@ -26195,6 +26201,15 @@ a.text-primary {
 }
 .fixednav > nav .black-logo {
   display: block;
+}
+.fixednav > nav.white-nav .btn-search .fa-magnifying-glass::before {
+  color: #000;
+}
+.fixednav > nav.white-nav .mail-icon rect {
+  fill: #000;
+}
+.fixednav > nav.white-nav .mail-icon path {
+  fill: #fff;
 }
 .fixednav > nav.white-nav .nav-item a {
   color: #000;

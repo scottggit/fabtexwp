@@ -929,6 +929,14 @@
   .black-logo {
     display: none;
   }
+  .mail-icon {
+    rect {
+      fill: #fff;
+    }
+    path {
+      fill: #000;
+    }
+  }
 }
 .fixednav {
   & > nav {
@@ -943,6 +951,17 @@
 
   & > nav {
     &.white-nav {
+      .btn-search .fa-magnifying-glass::before {
+        color: #000;
+      }
+      .mail-icon {
+        rect {
+          fill: #000;
+        }
+        path {
+          fill: #fff;
+        }
+      }
       .nav-item {
         a {
           color: #000;
