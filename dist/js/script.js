@@ -40,15 +40,24 @@ $(".blog_slick").slick({
   ],
 });
 
-$('.fab-wizard').on('click', '[data-wizard-step]', function(){
-  var toggleStep = $(this).attr('data-wizard-step');
-  var wizardContainer = $(this).closest('.fab-wizard').find('.wizard-step-container');
-  var wizardHeader = $(this).closest('.fab-wizard').find('.wizard-step-header');
-  wizardContainer.find('.wizard-step').slideUp('fast').removeClass('active');
-  wizardContainer.find('.'+toggleStep).slideDown('fast').addClass('active');
-  if(!wizardHeader.find('.'+toggleStep).hasClass('completed')){
-    wizardHeader.find('.'+toggleStep).prev().addClass('completed').removeClass('active');
-    wizardHeader.find('.'+toggleStep).addClass('active');
+$(".fab-wizard").on("click", "[data-wizard-step]", function () {
+  var toggleStep = $(this).attr("data-wizard-step");
+  var wizardContainer = $(this)
+    .closest(".fab-wizard")
+    .find(".wizard-step-container");
+  var wizardHeader = $(this).closest(".fab-wizard").find(".wizard-step-header");
+  wizardContainer.find(".wizard-step").slideUp("fast").removeClass("active");
+  wizardContainer
+    .find("." + toggleStep)
+    .slideDown("fast")
+    .addClass("active");
+  if (!wizardHeader.find("." + toggleStep).hasClass("completed")) {
+    wizardHeader
+      .find("." + toggleStep)
+      .prev()
+      .addClass("completed")
+      .removeClass("active");
+    wizardHeader.find("." + toggleStep).addClass("active");
   }
 });
 $(".speciality_slick").slick({
@@ -83,6 +92,28 @@ $(".clients_slick").slick({
       settings: {
         arrows: false,
         slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
+
+$(".projects_slick").slick({
+  slidesToShow: 1,
+  centerMode: true,
+  centerPadding: "40px",
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
       },
     },
     {

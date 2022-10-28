@@ -284,3 +284,70 @@ function content($limit) {
 //     );
 // }
 // add_action( 'admin_menu', 'wpdocs_register_my_custom_menu_page' );
+
+
+
+
+
+function clm_custom_post() {
+
+  //  hospitality
+  register_post_type('hospitality', array(
+      
+      'rewrite' => false,
+      'labels' => array(
+          'name' => 'Hospitality',
+          'singular_name' => 'hospitality',
+          'add_new_item' => 'Add new hospitality',
+          'edit_item' => 'Edit Product'
+      ),
+      'menu_icon' => 'dashicons-text-page',
+      'public' => true,
+      'has_archive' => false,
+      'supports' => array(
+          'title', 'thumbnail', 'editor', 'custom-fields', 'excerpt', 'tags',
+      )
+  ));
+
+
+
+  //  featured-projects
+  register_post_type('featured-projects', array(
+      
+    'rewrite' => false,
+    'labels' => array(
+        'name' => 'Featured Projects',
+        'singular_name' => 'Featured project',
+        'add_new_item' => 'Add new Featured Project',
+        'edit_item' => 'Edit Featured Project'
+    ),
+    'menu_icon' => 'dashicons-text-page',
+    'public' => true,
+    'has_archive' => false,
+    'supports' => array(
+        'title', 'thumbnail', 'editor', 'custom-fields', 'excerpt', 'tags',
+    )
+));
+
+
+}
+
+add_action('init', 'clm_custom_post');
+
+function hospitality_category() {  
+  register_taxonomy(  
+      'hospitality-category',  					// This is a name of the taxonomy. Make sure it's not a capital letter and no space in between
+      'hospitality',        			//post type name
+      array(  
+          'hierarchical' => true,  
+          'label' => 'Hospitality Categories',  	//Display name
+          'query_var' => true,
+    'has_archive' => true,
+    'rewrite' => array('slug' => 'hospitality-category'),
+          'supports' => array(
+              'title', 'thumbnail', 'editor', 'custom-fields', 'excerpt', 'tags'
+          )
+      )  
+  );  
+}  
+add_action( 'init', 'hospitality_category');

@@ -143,6 +143,9 @@
 <script type="text/javascript" src="<?php bloginfo('template_directory')?>/dist/js/TimelineMax.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory')?>/dist/js/TweenMax.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory')?>/dist/js/scrollto.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
@@ -250,6 +253,29 @@
             setCookie('fabric-list', JSON.stringify(cookie), 10);
           }
         });
+
+
+        $('.projects-wrap').on('click','.projectPopup-trigger', function(){
+        var getTrigger = $(this).attr('data-modal-trigger');
+        var getTriggerYear = getTrigger.split("-");
+        var triggerTab = '#project-slide-'+getTriggerYear[1]+'-tab';
+
+        
+        /* Activate this Year Tab */
+        $(triggerTab).addClass('slick-active slick-current');
+        var tabID = $(triggerTab).attr('data-bs-target');
+        var tabContent = $(tabID).addClass('active show');
+        
+        /* Trigger Modal Show */
+        var myModal = new bootstrap.Modal($('.projectPopup'), {
+            keyboard: false
+        });
+        myModal.show();
+    });
+
+    $('.mg-popup').magnificPopup({
+        type: 'iframe'
+    });
       });
 </script>
   <?php wp_footer(); ?>
