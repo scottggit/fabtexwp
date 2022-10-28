@@ -60,7 +60,7 @@
                            </li>
                       
                            <li class="menu-item has-mega-menu">
-                              <a class="item" href="#">Hospitality</a>
+                              <a class="item" href="<?php bloginfo('template_directory')?>/hospitality/">Hospitality</a>
                               <div class="mega-menu">
                           
                                  <div class="blocks row">
@@ -139,7 +139,7 @@
                               <a class="item" href="#">For Designers</a>
                            </li>
                            <li class="menu-item">
-                              <a class="item" href="#">The Feterik Leadership</a>
+                              <a class="item" href="<?php bloginfo('template_directory')?>/the-feterik-leadership/">The Feterik Leadership</a>
                            </li>
                     
                         </ul>
@@ -222,7 +222,7 @@
             </li>
 
             <li class="nav-item menu-item has-mega-menu">
-              <a class="nav-link" href="#">Hospitality</a>
+              <a class="nav-link" href="<?php bloginfo('template_directory')?>/hospitality/">Hospitality</a>
               <div class="mega-menu">
                                   
                                        <div class="row">
@@ -403,7 +403,7 @@
                                </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link redtext" href="contact_us.html"
+              <a class="nav-link redtext" href="<?php bloginfo('template_directory')?>/the-feterik-leadership/"
                 >The Feterik Leadership</a
               >
             </li>
