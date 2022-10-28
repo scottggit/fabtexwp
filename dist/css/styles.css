@@ -28073,4 +28073,22 @@ h1 .underlined::before, .h1 .underlined::before {
   transition: all 0.3s ease;
 }
 
+.navbar .collapse {
+  visibility: visible;
+}
+
+@media screen and (max-width: 991px) {
+  nav.navbar.bi-navbar {
+    background-color: #ffffff;
+  }
+  .video-w-poster {
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    overflow: hidden;
+  }
+  .scroller section {
+    height: auto !important;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
