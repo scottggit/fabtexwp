@@ -55,7 +55,8 @@
 
   <section class="fabric-chooser-wrap mt-lg-5 panel">
     <div class="container">
-      <div class="fabric-chooser mx-[-30px] row align-items-center">
+      <!-- <div class="fabric-chooser mx-[-30px] row align-items-center"> -->
+      <div class="fabric-chooser row align-items-center">
         <div class="hotspot-pop w-[450px] offset-lg-1 position-absolute px-4 invisible">
           <div class="box-content-wrap p-[20px]">
             <div class="subtitle mb-[25px] text-[#262831] font-weight-thin">THIS SEASON'S LOOK <span style="color:#f15d22">&mdash;</span></div>
@@ -75,7 +76,7 @@
 
   <section class="our_clients slick-w-custom-nav panel">
     <div class="container">
-      <div class="row align-items-center mb-5">
+      <div class="row align-items-center">
         <div class="col-md-2">
           <div class="my-custom-nav custom_nav_container">
             <div class="custom_nav animate__animated" data-animate="slideInUp">
@@ -84,7 +85,7 @@
             <div class="lg-n-container">
 
               <div class="lg-n-detail pt-4">
-                <h2 class="text-primary-light animate__animated text-[45px] text-[#262831]" data-animate="slideInUp">You’re In <br /><span class="underlined">Good</span> <br />Company</h2>
+                <h2 class="text-primary-light animate__animated text-[45px] text-[#262831]" data-animate="slideInUp">You’re In <span class="underlined">Good</span> Company</h2>
 
                 <p class="small text-[#262831] mt-4 leading-[24px]">From rising boutique hotels to the biggest brands, Fabtex has transformed thousands of spaces without a hitch.</p>
               </div>
@@ -178,7 +179,7 @@
           <p class="text-[#262831] mt-4">Except thoughtful, personal Fabtex service in creating beautiful spaces.</p>
           <form action=" " class="mt-5">
             <div class="row">
-              <div class="col">
+              <div class="col-md-6">
                 <div class="name-wrap">
                   <input type="text" class="form-control" placeholder="name">
                 </div>
@@ -189,7 +190,7 @@
                   <input type="email" class="form-control" placeholder="Add file or drop files here">
                 </div>
               </div>
-              <div class="col">
+              <div class="col-md-6">
                 <textarea class="form-control" placeholder="Tell us about project" style="resize: none;height: 100%;"></textarea>
                 <input type="submit" />
               </div>
@@ -203,7 +204,7 @@
   </section>
 
   <div class="newsletter-wrap">
-    <div class="container px-5">
+    <div class="container px-lg-5">
 
       <div class="row newsletter-inner">
         <div class="col-md-5">
@@ -224,6 +225,7 @@
 <?php get_footer(); ?>
 
 <script>
+if($(window).width() > 767){
   gsap.registerPlugin(ScrollTrigger);
 
     ScrollTrigger.defaults({
@@ -390,6 +392,7 @@
             },
         });
     });
+  }
 </script>
 
 <script>

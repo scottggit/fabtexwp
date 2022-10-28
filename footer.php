@@ -1,4 +1,4 @@
-<div class="newsletter-wrap">
+<!-- <div class="newsletter-wrap">
   <div class="container px-5">
 
     <div class="row newsletter-inner">
@@ -16,7 +16,7 @@
     </div>
 
   </div>
-</div>
+</div> -->
 <footer>
       <div class="container">
         <div class="row">

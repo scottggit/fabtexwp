@@ -91,7 +91,7 @@ $(".clients_slick").slick({
       breakpoint: 992,
       settings: {
         arrows: false,
-        slidesToShow: 2,
+        slidesToShow: 1.2,
       },
     },
     {
@@ -227,33 +227,33 @@ function scrollDetect(event) {
 
 // ScrollTrigger.addEventListener("scrollStart", (e) => {
 //    if()
+// // });
+
+// ScrollTrigger.batch(".our_clients .row>div .lg-n-container", {
+//   onEnter: (elements) => {
+//     gsap.from(elements, {
+//       y: 200,
+//       stagger: 0.25,
+//       ease: "Power2.Out",
+//       yoyo: true,
+//     });
+//   },
+//   once: false,
 // });
 
-ScrollTrigger.batch(".our_clients .row>div .lg-n-container", {
-  onEnter: (elements) => {
-    gsap.from(elements, {
-      y: 200,
-      stagger: 0.25,
-      ease: "Power2.Out",
-      yoyo: true,
-    });
-  },
-  once: false,
-});
-
-ScrollTrigger.batch(".c-card", {
-  onEnter: (elements) => {
-    gsap.from(elements, {
-      y: 300,
-      stagger: 0.15,
-      ease: "Power2.Out",
-      start: "top 90%",
-      end: "top 40%",
-      yoyo: true,
-    });
-  },
-  once: false,
-});
+// ScrollTrigger.batch(".c-card", {
+//   onEnter: (elements) => {
+//     gsap.from(elements, {
+//       y: 300,
+//       stagger: 0.15,
+//       ease: "Power2.Out",
+//       start: "top 90%",
+//       end: "top 40%",
+//       yoyo: true,
+//     });
+//   },
+//   once: false,
+// });
 
 gsap.utils.toArray(".contact-form-wrap").forEach((elem) => {
   let tl = gsap
@@ -267,22 +267,22 @@ gsap.utils.toArray(".contact-form-wrap").forEach((elem) => {
     .from(elem, { y: 100, duration: 1, ease: "Power2.Out" });
 });
 
-gsap.utils.toArray(".newsletter-wrap").forEach((elem) => {
-  let tl = gsap
-    .timeline({
-      scrollTrigger: {
-        trigger: elem,
+// gsap.utils.toArray(".newsletter-wrap").forEach((elem) => {
+//   let tl = gsap
+//     .timeline({
+//       scrollTrigger: {
+//         trigger: elem,
 
-        yoyo: true,
-      },
-    })
-    .from(elem, {
-      width: 0,
+//         yoyo: true,
+//       },
+//     })
+//     .from(elem, {
+//       width: 0,
 
-      duration: 1,
-      ease: "Power2.Out",
-    });
-});
+//       duration: 1,
+//       ease: "Power2.Out",
+//     });
+// });
 
 $(".floating-line1").each(function () {
   const svg = gsap.timeline({

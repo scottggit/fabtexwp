@@ -158,11 +158,11 @@ body {
     scroll-snap-points-y: repeat(100vh);
     scroll-snap-type: y mandatory; */
 }
-
+@media screen and (min-width: 768px) {
 .contact-wrap {
   padding: 10rem 7rem !important;
 }
-
+|
 .contact-form.panel.last {
   height: 780px !important;
 }
