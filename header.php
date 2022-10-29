@@ -75,12 +75,12 @@
     <div class="m-menu">
       <div class="m-menu__header">
         <label class="m-menu__toggle" for="menu">
-          <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+          <svg width="20" height="20s" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </label>
-        <span>MENU</span>
+      
       </div>
       <ul>
         <li><label>Home</label></li>
@@ -90,7 +90,7 @@
           <div class="m-menu">
             <div class="m-menu__header">
               <label class="m-menu__toggle" for="item-2">
-                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="butt" stroke-linejoin="arcs">
                   <path d="M19 12H6M12 5l-7 7 7 7"/>
                 </svg>
               </label>
@@ -98,7 +98,7 @@
             </div>
             <ul>
              <div class="sub-1">
-        <h6 class="title">Window Treatments</h6>
+             <label > <h6 class="title">Window Treatments</h6></label>
             <li><label>Draperies</label></li>
               <li><label>Roller Shades</label></li>
               <li><label>Blinds</label></li>
@@ -107,7 +107,7 @@
               <li><label>Speciality Shades</label></li>
               </div>
               <div class="sub-2">
-              <h6 class="title">Beddings</h6>
+              <label>  <h6 class="title">Beddings</h6></label>
             <li><label>Bed Covers</label></li>
               <li><label>Bed Skirt</label></li>
               <li><label>Box Spring Covers</label></li>
@@ -133,10 +133,113 @@
             </ul>
           </div>
         </li>
-        <li><label>Item 3</label></li>
-        <li><label>Item 4</label></li>
-        <li><label>Item 5</label></li>
-        <li><label>Item 6</label></li>
+        <li>
+          <label class="a-label__chevron" for="item-3">Healthcare</label>
+          <input type="checkbox" id="item-3" name="item-3" class="m-menu__checkbox">
+          <div class="m-menu">
+            <div class="m-menu__header">
+              <label class="m-menu__toggle" for="item-3">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="butt" stroke-linejoin="arcs">
+                  <path d="M19 12H6M12 5l-7 7 7 7"/>
+                </svg>
+              </label>
+              <span>HEALTHCARE</span>
+            </div>
+            <ul>
+             <div class="sub-1">
+  
+            <li><label>PRIVACY CURTAINS</label></li>
+              <li><label>SHOWER CURTAINS</label></li>
+              <li><label>HARDWARE</label></li>
+  
+              </div>
+    
+   
+            </ul>
+          </div>
+        </li>
+        <li><label>Custom Prints</label></li>
+        <li>
+          <label class="a-label__chevron" for="item-4">FOR BRANDS</label>
+          <input type="checkbox" id="item-4" name="item-4" class="m-menu__checkbox">
+          <div class="m-menu">
+            <div class="m-menu__header">
+              <label class="m-menu__toggle" for="item-4">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="butt" stroke-linejoin="arcs">
+                  <path d="M19 12H6M12 5l-7 7 7 7"/>
+                </svg>
+              </label>
+              <span></span>
+            </div>
+            <ul>
+             <div class="sub-1">
+             <div class="blocks row">
+                                         
+                                         <a href="#">
+                                           
+       <img src="<?php bloginfo('template_directory')?>/dist/img/specs-by-brand.jpg" alt="" class="w-100">
+                                         </a>
+                                     
+                                             </div>
+                                             <li>  <label class="a-label__chevron" for="item-2"><h6>Brand Log-In </h6><p>To access the project tracker, and installation & support resources.</p></label>
+                                           
+                                            </li>
+                                             <li>  <label class="a-label__chevron" for="item-2"><h6>Our Process</h6><p>Working with us for the first time? Here's what to expect.</p></label></li>
+                                             <li>  <label class="a-label__chevron" for="item-2"><h6>Find Fabrics</h6></label></li>
+  
+              </div>
+    
+   
+            </ul>
+          </div>
+        </li>
+        <li>
+          <label class="a-label__chevron" for="item-5">FOR DESIGNERS</label>
+          <input type="checkbox" id="item-5" name="item-5" class="m-menu__checkbox">
+          <div class="m-menu">
+            <div class="m-menu__header">
+              <label class="m-menu__toggle" for="item-5">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="butt" stroke-linejoin="arcs">
+                  <path d="M19 12H6M12 5l-7 7 7 7"/>
+                </svg>
+              </label>
+              <span></span>
+            </div>
+            <ul>
+             <div class="sub-1">
+             <div class="blocks row">
+                                         
+             <div class="room-visualizer-wrap" style="background-image: url(<?php bloginfo('template_directory')?>/dist/img/room-visualizer.jpg);background-size:cover;">
+                                     <div class="blocks row align-items-center  h-100">
+                                         
+                                           <div class="col-md-12 block">
+                                      <h3 style="color:#fff;">Room Visualizer <i class="fa-solid fa-arrow-right"></i></h3>
+                                      <p  style="color:#fff;">mix and match fabrics to style our virtual room according to your vision.</p>
+                                      
+                                           </div>
+                            
+                              
+                                
+                                        </div>
+                                    
+                              
+                                     </div>
+                                     
+                                             </div>
+                                             <li>  <label class="a-label__chevron" for="item-2"><h6>Search Fabrics By Color </h6><p>Upload an image or use the color picker to select similar-colored fabrics</p></label>
+                                           
+                                            </li>
+                                             <li>  <label class="a-label__chevron" for="item-2"><h6>Request Samples</h6><p>If you don't see a fabric you like here, tell us what you need and well find it for you</p></label></li>
+                              
+  
+              </div>
+    
+   
+            </ul>
+          </div>
+        </li>
+        <li><label>The Feterik Leadership</label></li>
+        <li><label>Contact Us</label></li>
       </ul>  
     </div>
   </nav>

@@ -177,6 +177,10 @@ $(".custom_nav").on("click", ".fake-next", function (event) {
 /* Logo Carousel End */
 
 $(document).ready(function () {
+  $(".mobile-menu-wrapper .btn-search").click(function () {
+    $(".mobile-menu-wrapper .search-box input").css("visibility", "visible");
+  });
+
   /* Element Animate */
   $(".animate__animated").scrolla({
     once: true,
