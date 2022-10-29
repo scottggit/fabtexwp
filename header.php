@@ -83,9 +83,9 @@
         <span>MENU</span>
       </div>
       <ul>
-        <li><label>Item 1</label></li>
+        <li><label>Home</label></li>
         <li>
-          <label class="a-label__chevron" for="item-2">Item 2</label>
+          <label class="a-label__chevron" for="item-2">Hospitality</label>
           <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
           <div class="m-menu">
             <div class="m-menu__header">
@@ -94,37 +94,43 @@
                   <path d="M19 12H6M12 5l-7 7 7 7"/>
                 </svg>
               </label>
-              <span>Item 2</span>
+              <span>Hospitality</span>
             </div>
             <ul>
-              <li><label>Item 2.1</label></li>
-              <li><label>Item 2.2</label></li>
-              <li>
-                <label class="a-label__chevron" for="item-2-3">Item 2.3</label>
-                <input type="checkbox" id="item-2-3" name="item-2" class="m-menu__checkbox">
-                <div class="m-menu">
-                  <div class="m-menu__header">
-                    <label class="m-menu__toggle" for="item-2-3">
-                      <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
-                        <path d="M19 12H6M12 5l-7 7 7 7"/>
-                      </svg>
-                    </label>
-                    <span>Item 2.3 </span>
-                  </div>
-                  <ul>
-                    <li><label>Item 2.3.1</label></li>
-                    <li><label>Item 2.3.2</label></li>
-                    <li><label>Item 2.3.3</label></li>
-                    <li><label>Item 2.3.4</label></li>
-                    <li><label>Item 2.3.5</label></li>
-                  </ul>                
-              </li>
-              <li><label>Item 2.4</label></li>
-              <li><label>Item 2.5</label></li>
-              <li><label>Item 2.6</label></li>
-              <li><label>Item 2.7</label></li>
-              <li><label>Item 2.8</label></li>
-              <li><label>Item 2.9</label></li>
+             <div class="sub-1">
+        <h6 class="title">Window Treatments</h6>
+            <li><label>Draperies</label></li>
+              <li><label>Roller Shades</label></li>
+              <li><label>Blinds</label></li>
+              <li><label>Top Treatments</label></li>
+              <li><label>Hardware</label></li>
+              <li><label>Speciality Shades</label></li>
+              </div>
+              <div class="sub-2">
+              <h6 class="title">Beddings</h6>
+            <li><label>Bed Covers</label></li>
+              <li><label>Bed Skirt</label></li>
+              <li><label>Box Spring Covers</label></li>
+              <li><label>Scarves</label></li>
+              <li><label>Pillows</label></li>
+ 
+              </div>
+              <div class="sub-3">
+              <div class="col-md col-right" style="background:url('<?php bloginfo('template_directory')?>/dist/img/process-back.jpg');background-size:cover;">
+                                           
+                                           <div class="row align-items-center h-100">
+    <div class="col-right-wrap">
+          
+    <img src="<?php bloginfo('template_directory')?>/dist/img/process.png" alt="" class="mb-5">
+      <h3>Our Process</h3>
+      <p>Working with us for the first time?</p>
+      <p>Here's what to except.</p>
+    </div>
+    
+                                           </div>
+                                              </div>
+              </div>
+            </ul>
           </div>
         </li>
         <li><label>Item 3</label></li>

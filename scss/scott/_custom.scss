@@ -863,7 +863,7 @@ nav.mobile-nav .m-menu {
   -webkit-transition: transform 0.35s;
   transition: transform 0.35s;
   z-index: 1;
-  overflow: hidden;
+
   background-color: #fff;
 }
 nav.mobile-nav .m-menu__overlay {
@@ -966,5 +966,17 @@ nav.mobile-nav .m-menu__checkbox:checked ~ .m-menu {
   display: none;
   @media screen and (max-width: 991px) {
     display: block;
+  }
+}
+
+.m-menu {
+  h6 {
+    padding: 35px 15px 15px 15px;
+  }
+  .col-right-wrap {
+    padding: 4rem;
+    * {
+      color: #fff;
+    }
   }
 }
