@@ -31,7 +31,110 @@
   </head>
   <body  <?php echo body_class(); ?>>
   
+<div class="mobile-menu-wrapper">
+  <nav class="mobile-nav bi-navbar">
+    <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
 
+    <a class="navbar-brand logo" href="/">
+        <?php   if($post_slug=='healthcare-manual'){ ?>
+          
+          <img src="<?php bloginfo('template_directory')?>/dist/img/logo-white.png" alt="" class="white-logo">
+          <img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt=""  class="black-logo">
+        <?php
+        }else{
+          ?>
+          <img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt=""  class="black-logo">
+       <?php }   ?>
+
+
+    
+       
+
+        </a>
+        <form action="#" class="search-box mr-2">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search.."
+              required
+            />
+            <button class="btn-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+            <div class="col-auto d-xl-none">         
+    <label class="m-menu__toggle" for="menu">
+      <svg width="35" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+        <line x1="3" y1="12" x2="21" y2="12" stroke-dasharray="13"></line>
+        <line x1="3" y1="6" x2="21" y2="6" stroke-dasharray="10"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </label>
+    </div>   
+    <label class="m-menu__overlay" for="menu"></label>
+  
+    <div class="m-menu">
+      <div class="m-menu__header">
+        <label class="m-menu__toggle" for="menu">
+          <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </label>
+        <span>MENU</span>
+      </div>
+      <ul>
+        <li><label>Item 1</label></li>
+        <li>
+          <label class="a-label__chevron" for="item-2">Item 2</label>
+          <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+          <div class="m-menu">
+            <div class="m-menu__header">
+              <label class="m-menu__toggle" for="item-2">
+                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                  <path d="M19 12H6M12 5l-7 7 7 7"/>
+                </svg>
+              </label>
+              <span>Item 2</span>
+            </div>
+            <ul>
+              <li><label>Item 2.1</label></li>
+              <li><label>Item 2.2</label></li>
+              <li>
+                <label class="a-label__chevron" for="item-2-3">Item 2.3</label>
+                <input type="checkbox" id="item-2-3" name="item-2" class="m-menu__checkbox">
+                <div class="m-menu">
+                  <div class="m-menu__header">
+                    <label class="m-menu__toggle" for="item-2-3">
+                      <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                        <path d="M19 12H6M12 5l-7 7 7 7"/>
+                      </svg>
+                    </label>
+                    <span>Item 2.3 </span>
+                  </div>
+                  <ul>
+                    <li><label>Item 2.3.1</label></li>
+                    <li><label>Item 2.3.2</label></li>
+                    <li><label>Item 2.3.3</label></li>
+                    <li><label>Item 2.3.4</label></li>
+                    <li><label>Item 2.3.5</label></li>
+                  </ul>                
+              </li>
+              <li><label>Item 2.4</label></li>
+              <li><label>Item 2.5</label></li>
+              <li><label>Item 2.6</label></li>
+              <li><label>Item 2.7</label></li>
+              <li><label>Item 2.8</label></li>
+              <li><label>Item 2.9</label></li>
+          </div>
+        </li>
+        <li><label>Item 3</label></li>
+        <li><label>Item 4</label></li>
+        <li><label>Item 5</label></li>
+        <li><label>Item 6</label></li>
+      </ul>  
+    </div>
+  </nav>
+</div>
     
   <div class="mobile-menu ">
          <div class="d-flex flex-column h-100">
@@ -62,7 +165,7 @@
                            </li>
                       
                            <li class="menu-item has-mega-menu">
-                              <a class="item" href="<?php bloginfo('template_directory')?>/hospitality/">Hospitality</a>
+                              <a class="item" href="#">Hospitality</a>
                               <div class="mega-menu">
                           
                                  <div class="blocks row">
