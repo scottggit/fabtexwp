@@ -709,12 +709,14 @@ footer .nav-footer li {
 }
 
 .contact-form .contact-wrap:after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #ffffff8d;
-  content: "";
-  top: 0;
+  @media screen and (max-width: 991px) {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffffa6;
+    content: "";
+    top: 0;
+  }
 }
 .contact-form .contact-wrap > div {
   position: relative;
@@ -730,17 +732,7 @@ body .scroller section {
     height: auto !important;
   }
 }
-.contact-form input[type="submit"] {
-  @media screen and (max-width: 991px) {
-    margin-top: 1rem;
-  }
-}
 
-.contact-wrap form .row > div {
-  @media screen and (max-width: 991px) {
-    height: 100%;
-  }
-}
 .newsletter-wrap .row h3 {
   @media screen and (max-width: 991px) {
     margin-bottom: 1rem;
@@ -755,5 +747,78 @@ body .scroller section {
 .newsletter-wrap .newsletter-inner {
   @media screen and (max-width: 991px) {
     padding: 3rem 0;
+  }
+}
+
+.our_clients {
+  .custom_nav {
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .my-custom-nav {
+    p {
+      @media screen and (max-width: 991px) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+section.contact-form {
+  @media screen and (max-width: 991px) {
+    margin-top: 4rem;
+  }
+}
+
+.contact-form .contact-wrap {
+  @media screen and (max-width: 991px) {
+    padding: 4rem 0;
+  }
+}
+
+textarea.form-control {
+  @media screen and (max-width: 991px) {
+    min-height: calc(8em + 1.4rem + 2px);
+  }
+}
+
+footer h3 {
+  @media screen and (max-width: 991px) {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+}
+
+.fixedbtn-wrap {
+  @media screen and (max-width: 991px) {
+    right: 0;
+    top: 50%;
+    transform: translate(-10%, 0px);
+  }
+  .h-\[174px\] {
+    @media screen and (max-width: 991px) {
+      height: 70px;
+    }
+  }
+
+  .fixedbtn {
+    @media screen and (max-width: 991px) {
+      transform: none;
+      border-radius: 50%;
+    }
+  }
+}
+.bottom-footer {
+  @media screen and (max-width: 991px) {
+    text-align: center;
+    justify-content: center;
+  }
+  * {
+    @media screen and (max-width: 991px) {
+      text-align: center;
+      justify-content: center;
+    }
   }
 }

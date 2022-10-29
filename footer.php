@@ -72,7 +72,7 @@
         <div class=" mt-5 bg-[#FEFEFE] border-[#26283147] border-t-[1px]">
             <div class="container">
                 <div class="row py-3">
-                    <div class="d-lg-flex d-grid justify-content-lg-between align-items-center">
+                    <div class="bottom-footer d-lg-flex d-lg-grid justify-content-lg-between align-items-center">
                         <p class="copyright m-0 order-3 order-lg-1 text-[12px] font-weight-light">
                         © 2022 Fabtex - All Rights Reserved
                         </p>

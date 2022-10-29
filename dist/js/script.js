@@ -91,6 +91,7 @@ $(".clients_slick").slick({
       breakpoint: 992,
       settings: {
         arrows: false,
+        centerMode: false,
         slidesToShow: 1.2,
       },
     },

@@ -28130,13 +28130,15 @@ h1 .underlined::before, .h1 .underlined::before {
   }
 }
 
-.contact-form .contact-wrap:after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.5529411765);
-  content: "";
-  top: 0;
+@media screen and (max-width: 991px) {
+  .contact-form .contact-wrap:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6509803922);
+    content: "";
+    top: 0;
+  }
 }
 
 .contact-form .contact-wrap > div {
@@ -28157,18 +28159,6 @@ h1 .underlined::before, .h1 .underlined::before {
 }
 
 @media screen and (max-width: 991px) {
-  .contact-form input[type=submit] {
-    margin-top: 1rem;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .contact-wrap form .row > div {
-    height: 100%;
-  }
-}
-
-@media screen and (max-width: 991px) {
   .newsletter-wrap .row h3, .newsletter-wrap .row .h3 {
     margin-bottom: 1rem;
   }
@@ -28183,6 +28173,74 @@ h1 .underlined::before, .h1 .underlined::before {
 @media screen and (max-width: 991px) {
   .newsletter-wrap .newsletter-inner {
     padding: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .our_clients .custom_nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .our_clients .my-custom-nav p {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  section.contact-form {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .contact-form .contact-wrap {
+    padding: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  textarea.form-control {
+    min-height: calc(8em + 1.4rem + 2px);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  footer h3, footer .h3 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .fixedbtn-wrap {
+    right: 0;
+    top: 50%;
+    transform: translate(-10%, 0px);
+  }
+}
+@media screen and (max-width: 991px) {
+  .fixedbtn-wrap .h-\[174px\] {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .fixedbtn-wrap .fixedbtn {
+    transform: none;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .bottom-footer {
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 991px) {
+  .bottom-footer * {
+    text-align: center;
+    justify-content: center;
   }
 }
 
