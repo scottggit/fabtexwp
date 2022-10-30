@@ -464,6 +464,9 @@ footer .nav-footer li {
   border: 2px #d6d6d6 dashed;
   padding: 4rem;
   border-radius: 10px;
+  @media screen and (max-width: 991px) {
+    padding: 2rem;
+  }
 }
 
 .resources-section .resource-wrap {

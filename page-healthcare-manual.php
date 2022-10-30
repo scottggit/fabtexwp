@@ -89,10 +89,10 @@ Resources
             <div class="resource-wrap">
             <div class="resource-wrap-inner">
                 <div class="row">
-                <div class="col-md-auto">
+                <div class="col-md-auto col-3">
                 <span>01</span>
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-10 col-9">
                                 <h3>Brochure & Specs</h3>  
                 </div>
                 </div>
@@ -104,10 +104,10 @@ Resources
                 <div class="resource-wrap">
                 <div class="resource-wrap-inner">
                 <div class="row">
-                    <div class="col-md-auto">
+                    <div class="col-md-auto  col-3">
 <span>02</span>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10  col-9">
                     <h3> Care Instructions </h3>
 </div>
                 </div>     </div>
@@ -119,10 +119,10 @@ Resources
             <div class="resource-wrap">
             <div class="resource-wrap-inner">
             <div class="row">
-                    <div class="col-md-auto">
+                    <div class="col-md-auto  col-3">
 <span>03</span>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10  col-9">
                   <h3>Room Measure Form</h3>  
 </div>
                 </div>  </div>
@@ -131,10 +131,10 @@ Resources
                 <div class="resource-wrap">
                 <div class="resource-wrap-inner">
                 <div class="row">
-                    <div class="col-md-auto">
+                    <div class="col-md-auto  col-3">
 <span>04</span>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10  col-9">
                     <h3> Quote Request Form </h3>
 </div>  </div>
                 </div> </div>

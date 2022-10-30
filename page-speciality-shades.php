@@ -76,10 +76,10 @@ Resources
             <div class="resource-wrap">
             <div class="resource-wrap-inner">
                 <div class="row">
-                <div class="col-md-auto">
+                <div class="col-md-auto col-3">
                 <span>01</span>
                                     </div>
-                                    <div class="col-md-10">
+                                    <div class="col-md-10 col-9">
                                 <h3>Brochure & Specs</h3>  
                 </div>
                 </div>
@@ -91,10 +91,10 @@ Resources
                 <div class="resource-wrap">
                 <div class="resource-wrap-inner">
                 <div class="row">
-                    <div class="col-md-auto">
+                    <div class="col-md-auto  col-3">
 <span>02</span>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10  col-9">
                     <h3> Care Instructions </h3>
 </div>
                 </div>     </div>
@@ -106,10 +106,10 @@ Resources
             <div class="resource-wrap">
             <div class="resource-wrap-inner">
             <div class="row">
-                    <div class="col-md-auto">
+                    <div class="col-md-auto  col-3">
 <span>03</span>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10  col-9">
                   <h3>Room Measure Form</h3>  
 </div>
                 </div>  </div>
@@ -118,10 +118,10 @@ Resources
                 <div class="resource-wrap">
                 <div class="resource-wrap-inner">
                 <div class="row">
-                    <div class="col-md-auto">
+                    <div class="col-md-auto  col-3">
 <span>04</span>
                     </div>
-                    <div class="col-md-10">
+                    <div class="col-md-10  col-9">
                     <h3> Quote Request Form </h3>
 </div>  </div>
                 </div> </div>
@@ -129,6 +129,24 @@ Resources
         </div>
     </div>
 </section>
+
+<div class="newsletter-wrap">
+    <div class="container px-lg-5">
+
+      <div class="row newsletter-inner">
+        <div class="col-md-5">
+          <h3 class="text-light font-weight-bold text-[30px]" data-aos="fade-up" data-aos-offset="0" data-aos-duration="2000">Sign Up For Inspiration, Discounts & More</h3>
+        </div>
+        <div class="col-md-7">
+          <form action="" data-aos="fade-up">
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Sign up</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
 <?php get_footer(); ?>
 
 

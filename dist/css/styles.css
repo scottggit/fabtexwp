@@ -21216,7 +21216,7 @@ a.text-primary {
 
 .search-btn {
   border-radius: 100px;
-  padding-left: 0;
+  padding-left: 50px;
   padding-right: 0;
   position: relative;
 }
@@ -27889,6 +27889,11 @@ h1 .underlined::before, .h1 .underlined::before {
   border: 2px #d6d6d6 dashed;
   padding: 4rem;
   border-radius: 10px;
+}
+@media screen and (max-width: 991px) {
+  .resource-wrap-inner {
+    padding: 2rem;
+  }
 }
 
 .resources-section .resource-wrap {
