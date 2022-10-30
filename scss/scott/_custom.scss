@@ -1013,3 +1013,20 @@ body {
 .speciality_slick_wrap .custom_nav span {
   cursor: pointer;
 }
+.desktop-nav {
+  @media screen and (max-width: 991px) {
+    display: none;
+  }
+}
+
+.speciality_slick .slick-slide {
+  @media screen and (max-width: 991px) {
+    height: 13rem;
+  }
+}
+
+.speciality_slick .slick-slide img {
+  @media screen and (max-width: 991px) {
+    border-radius: 0 0 20px 20px;
+  }
+}

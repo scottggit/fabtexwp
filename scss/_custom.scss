@@ -134,7 +134,11 @@ a.text-primary {
 
 .search-btn {
   border-radius: 100px;
-  padding: 0.8rem 3rem 0.8rem 3rem;
+  padding-left: 0;
+  padding-right: 0;
+  @media screen and (min-width: 991px) {
+    padding: 0.8rem 3rem 0.8rem 3rem;
+  }
   position: relative;
   &:before {
     content: "";
@@ -153,7 +157,9 @@ a.text-primary {
 }
 
 .menu-spacing-top {
-  padding-top: 10rem;
+  @media screen and (min-width: 991px) {
+    padding-top: 10rem;
+  }
 }
 
 .speciality_slick {

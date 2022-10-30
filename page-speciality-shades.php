@@ -12,8 +12,8 @@
 
 <section class="hero-banner menu-spacing-top slick-w-custom-nav">
   <div class="container">
-  <div class="row align-items-center w-100">
-    <div class="col-lg-6 banner-desc">
+  <div class="row align-items-center">
+    <div class="col-lg-6 banner-desc order-lg-1 order-2">
         <h1 class=" font-head display-3 mb-4"  data-aos="fade-right" data-aos-offset="0"  data-aos-duration="000">Specialty <span class="underlined">Shades</span> </h1>
     
         <p class="breadcrumb-page" data-aos="fade-up"
@@ -22,10 +22,10 @@
           data-aos-duration="1000"> <U >Hospitality</U> <SPAN>> </SPAN> <U> Window Treatments </U> <SPAN>></SPAN> Specialty Shades</p>
         
     <p class="mt-5 mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor</p>
-      <a href="" class="btn search-btn mb-5">SEARCH SPECIALTY SHADES FABRICS BY COLOR</a>
+      <a href="" class="btn search-btn mb-5">SEARCH  BY COLOR</a>
       <a href="" class="btn ">OPEN FABRIC SEARCH FILTERS</a>
     </div>
-    <div class="col-lg-6 p-0 mb-5 mb-lg-0  right-0 speciality_slick_wrap ">
+    <div class="col-lg-6 p-0 mb-5 mb-lg-0  right-0 speciality_slick_wrap  order-lg-2 order-1">
         <div class="img-slide-container">
        
         <div class="speciality_slick slick_trigger">

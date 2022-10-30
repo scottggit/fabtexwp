@@ -30,9 +30,14 @@
  <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/dist/css/styles.css" />
   </head>
   <body  <?php echo body_class(); ?>>
+  <?php 
+    global $post;
+    $post_slug = $post->post_name;
   
+?>
+
 <div class="mobile-menu-wrapper">
-  <nav class="mobile-nav bi-navbar">
+  <nav class="mobile-nav bi-navbar navbar-light ">
     <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
 
     <a class="navbar-brand logo" href="/">
@@ -393,7 +398,7 @@
 
     
     <nav
-      class="navbar bi-navbar <?php   if($post_slug=='healthcare-manual'){echo 'white-nav';} ?> fixed-top navbar-expand-lg navbar-light px-xxl-5 pt-lg-4 " data-aos="fade-down"
+      class="navbar bi-navbar desktop-nav <?php   if($post_slug=='healthcare-manual'){echo 'white-nav';} ?> fixed-top navbar-expand-lg navbar-light px-xxl-5 pt-lg-4 " data-aos="fade-down"
          
          data-aos-offset="0"
          data-aos-duration="2000"
