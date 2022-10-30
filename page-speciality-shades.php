@@ -10,7 +10,7 @@
 </style>
  
 
-<section class="hero-banner menu-spacing-top">
+<section class="hero-banner menu-spacing-top slick-w-custom-nav">
   <div class="container">
   <div class="row align-items-center w-100">
     <div class="col-lg-6 banner-desc">
@@ -43,7 +43,7 @@
 
   </div>
             <div class="custom_nav animate__animated" data-animate="slideInUp">
-    <span><i class="fa-solid fa-arrow-left text-[#262831]"></i></span> <span class=""><i class="text-[#262831] fa-solid fa-arrow-right"></i></span>
+    <span  class="fake-prev"><i class="fa-solid fa-arrow-left text-[#262831]"></i></span> <span  class="fake-next"><i class="text-[#262831] fa-solid fa-arrow-right"></i></span>
 </div>
         </div>
 

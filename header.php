@@ -229,7 +229,7 @@
                                              <li>  <label class="a-label__chevron" for="item-2"><h6>Search Fabrics By Color </h6><p>Upload an image or use the color picker to select similar-colored fabrics</p></label>
                                            
                                             </li>
-                                             <li>  <label class="a-label__chevron" for="item-2"><h6>Request Samples</h6><p>If you don't see a fabric you like here, tell us what you need and well find it for you</p></label></li>
+                                             <li>  <label class="a-label__chevron" for="item-2"><h6>Request Samples</h6><p>If you don't see a fabric you like here, tell us what you need and well find it for yous</p></label></li>
                               
   
               </div>

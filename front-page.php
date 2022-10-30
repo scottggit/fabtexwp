@@ -74,13 +74,13 @@
     </div>
   </section>
 
-  <section class="our_clients slick-w-custom-nav panel">
+  <section class="our_clients slick-w-custom-nav  panel">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-md-2">
           <div class="my-custom-nav custom_nav_container">
             <div class="custom_nav animate__animated" data-animate="slideInUp">
-              <span><i class="fa-solid fa-arrow-left text-[#262831]"></i></span> <span class="font-[800] text-[#262831] font-[monospace] px-3">/</span> <span class=""><i class="text-[#262831] fa-solid fa-arrow-right"></i></span>
+              <span  class="fake-prev"><i class="fa-solid fa-arrow-left text-[#262831]"></i></span> <span class="font-[800] text-[#262831] font-[monospace] px-3">/</span> <span class="fake-next"><i class="text-[#262831] fa-solid fa-arrow-right"></i></span>
             </div>
             <div class="lg-n-container">
 

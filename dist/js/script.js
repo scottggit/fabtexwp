@@ -162,18 +162,39 @@ $(".logo-img_carousel").slick({
     },
   ],
 });
-$(".custom_nav").on("click", ".fake-prev", function (event) {
+$(".our_clients .custom_nav").on("click", ".fake-prev", function (event) {
   $(this)
     .closest(".slick-w-custom-nav")
     .find(".slick_trigger")
     .slick("slickPrev");
 });
-$(".custom_nav").on("click", ".fake-next", function (event) {
+$(".our_clients .custom_nav").on("click", ".fake-next", function (event) {
   $(this)
     .closest(".slick-w-custom-nav")
     .find(".slick_trigger")
     .slick("slickNext");
 });
+
+$(".speciality_slick_wrap .custom_nav").on(
+  "click",
+  ".fake-prev",
+  function (event) {
+    $(this)
+      .closest(".slick-w-custom-nav")
+      .find(".slick_trigger")
+      .slick("slickPrev");
+  }
+);
+$(".speciality_slick_wrap .custom_nav").on(
+  "click",
+  ".fake-next",
+  function (event) {
+    $(this)
+      .closest(".slick-w-custom-nav")
+      .find(".slick_trigger")
+      .slick("slickNext");
+  }
+);
 /* Logo Carousel End */
 
 $(document).ready(function () {
