@@ -90,7 +90,7 @@
       <ul>
         <li><label>Home</label></li>
         <li>
-          <label class="a-label__chevron" for="item-2">Hospitality</label>
+          <a href="<?php echo get_site_url() ?>/hospitality/" class="a-label__chevron" for="item-2">Hospitality</a>
           <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
           <div class="m-menu">
             <div class="m-menu__header">
@@ -163,7 +163,9 @@
             </ul>
           </div>
         </li>
-        <li><label>Custom Prints</label></li>
+        <li>
+          <a href="<?php echo get_site_url() ?>/custom-prints/">Custom Prints</a>
+        </li>
         <li>
           <label class="a-label__chevron" for="item-4">FOR BRANDS</label>
           <input type="checkbox" id="item-4" name="item-4" class="m-menu__checkbox">
@@ -243,7 +245,7 @@
             </ul>
           </div>
         </li>
-        <li><label>The Feterik Leadership</label></li>
+        <li><a href="<?php echo get_site_url() ?>/the-feterik-leadership/">The Feterik Leadership</a></li>
         <li><label>Contact Us</label></li>
       </ul>  
     </div>
@@ -440,8 +442,8 @@
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
 
-            <li class="nav-item menu-item has-mega-menu">
-              <a class="nav-link" href="<?php bloginfo('template_directory')?>/hospitality/">Hospitality</a>
+            <li class="nav-item menu-item has-mega-menu">              
+              <a class="nav-link" href="<?php echo get_site_url() ?>/hospitality/">Hospitality</a>
               <div class="mega-menu">
                                   
                                        <div class="row">
@@ -573,7 +575,7 @@
 </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="blogs.html">Custom Prints</a>
+              <a class="nav-link" href="<?php echo get_site_url() ?>/custom-prints/">Custom Prints</a>
             </li>
             <li class="nav-item menu-item has-mega-menu">
               <a class="nav-link" href="contact_us.html">For Designers</a>
@@ -622,9 +624,7 @@
                                </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link redtext" href="<?php bloginfo('template_directory')?>/the-feterik-leadership/"
-                >The Feterik Leadership</a
-              >
+              <a class="nav-link redtext" href="<?php echo get_site_url() ?>/the-feterik-leadership/">The Feterik Leadership</a>
             </li>
           </ul>
 <a href="<?php echo get_site_url() ?>/contact-us" class="px-xl-3 px-xxl-3 mail-icon"><svg xmlns="http://www.w3.org/2000/svg" width="17.203" height="11" viewBox="0 0 17.203 11">

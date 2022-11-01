@@ -1,6 +1,6 @@
 <?php get_header() ?>
 
-<section class="hero-banner hero-banner-page mrgt-8">
+<section class="hero-banner hero-banner-page mrgt-8 mt-5">
     <div class="container-fluid">
         <div class="row align-items-center">
             <div class="col-md-6 p-md-0 order-md-2">
