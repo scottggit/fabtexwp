@@ -48,11 +48,9 @@
         <?php
         }else{
           ?>
-          <img src="<?php bloginfo('template_directory')?>/dist/img/logo.png" alt=""  class="black-logo">
+          <img src="<?php bloginfo('template_directory')?>/dist/img/header-logo.svg" alt=""  class="black-logo w-[13.5rem]">
        <?php }   ?>
 
-
-    
        
 
         </a>
@@ -400,7 +398,7 @@
 
     
     <nav
-      class="navbar bi-navbar desktop-nav <?php   if($post_slug=='healthcare-manual'){echo 'white-nav';} ?> fixed-top navbar-expand-lg navbar-light px-xxl-5 pt-lg-4 " data-aos="fade-down"
+      class="navbar bi-navbar desktop-nav <?php   if($post_slug=='healthcare-manual'){echo 'white-nav';} ?> sticky-top navbar-expand-lg navbar-light px-xxl-5 pt-lg-4 " data-aos="fade-down"
          
          data-aos-offset="0"
          data-aos-duration="2000"
@@ -437,7 +435,7 @@
           class="collapse navbar-collapse justify-content-lg-center main-nav"
           id="bi-navbar"
         >
-          <ul class="nav-menu navbar-nav mb-2 mb-lg-0">
+          <ul class="nav-menu navbar-nav mb-2 mb-lg-0 mr-3">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
@@ -627,14 +625,10 @@
               <a class="nav-link redtext" href="<?php echo get_site_url() ?>/the-feterik-leadership/">The Feterik Leadership</a>
             </li>
           </ul>
-<a href="<?php echo get_site_url() ?>/contact-us" class="px-xl-3 px-xxl-3 mail-icon"><svg xmlns="http://www.w3.org/2000/svg" width="17.203" height="11" viewBox="0 0 17.203 11">
-  <g id="Group_1210" data-name="Group 1210" transform="translate(18034.324 19741.064)">
-    <rect id="Rectangle_987" data-name="Rectangle 987" width="17" height="11" rx="2" transform="translate(-18034.166 -19741.064)" fill="#262831"/>
-    <path id="Path_1602" data-name="Path 1602" d="M-18034-19738.107s5.789,3.543,8.25,3.59,7.574-3.3,7.574-3.3" transform="translate(0.362 -0.796)" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="1"/>
-  </g>
-</svg>
-</a>
-          <form action="#" class="search-box mr-2">
+          <a href="<?php echo get_site_url() ?>/contact-us" class="px-xl-3 px-xxl-3 mail-icon">
+            <img src="<?php bloginfo('template_directory')?>/dist/img/header-mail.svg"/>
+          </a>
+          <form action="#" class="search-box  w-[1.5rem]">
             <input
               type="search"
               name="search"
@@ -642,7 +636,7 @@
               required
             />
             <button class="btn-search">
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <img src="<?php bloginfo('template_directory')?>/dist/img/header-search.svg"/>
             </button>
           </form>
 
