@@ -1124,16 +1124,19 @@ p,
             z-index: -1;
         }
     }
-    .accordion-body{
+
+    .accordion-body {
         padding-left: 1rem;
         padding-right: 1rem;
         padding-top: 0;
     }
+
     .accordion-button {
         padding: 1rem;
         font-size: 1rem;
         color: var(--body-color);
         transition: all 0.3s ease;
+
         &:focus {
             box-shadow: none
         }
@@ -1194,6 +1197,124 @@ p,
         justify-content: center;
         text-align: center;
         padding: 5rem;
+    }
+}
+
+.white-box {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 2rem;
+
+    &-w-shadow {
+        box-shadow: 0px 0px 8px #91919119;
+    }
+
+    &-w-border {
+        &::before {
+            content: '';
+            border: 2px dashed #D6D6D6;
+            opacity: 0.4;
+            position: absolute;
+            top: 1rem;
+            bottom: 1rem;
+            left: 1rem;
+            right: 1rem;
+            border-radius: 10px;
+            z-index: 2;
+        }
+    }
+
+    &-w-bd-lt {
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 5rem;
+            width: 5rem;
+            border-left: 3px solid #f15d22;
+            border-top: 3px solid #f15d22;
+            border-radius: 20px 0 0 0;
+        }
+    }
+}
+
+.projectPopup {
+    .modal-content {
+        position: relative;
+        background-color: rgba(124, 125, 132, 0.8);
+    }
+
+    .recent_projects_slick {
+        width: 100%;
+    }
+
+    .project-slide {
+        border-radius: 2rem;
+        margin-top: 4rem;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .project-background {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+    }
+
+    .project-detail {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        color: var(--body-color);
+    }
+    
+    .close {
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+        z-index: 2;
+        color: var(--white);
+        background-color: transparent;
+        border: 2px solid var(--white);
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: var(--body-color);
+            background-color: var(--white);
+        }
+    }
+
+    .custom_nav {
+        position: absolute;
+        top: 2rem;
+    }
+
+    .slick-prev {
+        top: 0;
+        left: 0;
+    }
+
+    .slick-next {
+        top: 0;
+        left: 4rem;
+    }
+
+    .slick-next,
+    .slick-prev {
+        background-color: var(--white);
+    }
+
+    .slick-next::before,
+    .slick-prev::before {
+        color: var(--primary);
     }
 }
 
@@ -1275,18 +1396,21 @@ p,
         transform: translateY(-50%);
         z-index: -1;
     }
-    .faq-accordian{
-        .accordion-item{
+
+    .faq-accordian {
+        .accordion-item {
             &::before {
                 height: 5rem;
                 width: 5rem;
             }
         }
-        .accordion-button{
+
+        .accordion-button {
             padding: 2rem;
             font-size: 1.5rem;
         }
-        .accordion-body{
+
+        .accordion-body {
             padding-left: 2rem;
             padding-right: 2rem;
             padding-bottom: 2rem;
@@ -1435,12 +1559,14 @@ p,
             margin-bottom: 2rem;
         }
     }
-    .faq-accordian{
-        .accordion-button{
+
+    .faq-accordian {
+        .accordion-button {
             padding: 3rem;
             font-size: 1.5rem;
         }
-        .accordion-body{
+
+        .accordion-body {
             padding-left: 3rem;
             padding-right: 3rem;
             padding-top: 0;
