@@ -189,7 +189,7 @@
     </div>
 </div>
 
-<?php get_footer()?>
+<?php get_footer() ?>
 <script>
     var colorWheel = new iro.ColorPicker("#colorWheelDemo", {
         // options here
